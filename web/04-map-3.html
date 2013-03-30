@@ -1,0 +1,67 @@
+<!--
+Author: Stefan Kasberger
+License: 2-clause BSD (Free BDS)
+Description: 
+-->
+
+<!doctype html>
+<head>
+	<!-- 
+		Inside the header you load scripts, stylesheets or define meta values for your browser and devices.
+		Nothing in here will be shown inside your browser. 
+	-->
+	<title>FOSSGIS Introduction Course - Web Map</title>
+	<meta charset="utf-8">
+
+	<!-- load css stylesheets -->
+	<link rel="stylesheet" href="css/leaflet.css" />
+	
+	<!-- load javascript libraries -->
+	<script type="text/javascript" src="js/leaflet.js"></script>
+	<style type="text/css">
+		#map { 
+			height: 500px; 
+			width: 500px; 
+			background-color: #666666;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		Inside the body you place all your stuff you want to have been shown inside your browser window.
+	-->
+	<div>
+		<h2>Headline</h2>
+		<p>here is some text inside a p tag with a <a href="http://www.w3c.com" title="W3C" alt="W3C">link</a>. After this paragraph follows an image of the earth's gravity field.</p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Earth_gravity.png?uselang=de" alt="earth" title="Earth" />
+	</div>
+	<div id="map"></div>
+</body>
+<script type="text/javascript">
+	// Inside the script section you can add javascript or css code inside an html document.
+
+ 	// create map and add layer
+  	var map = L.map('map', {
+    	center: new L.LatLng(47.07, 15.43),
+      	zoom: 17,
+     });
+
+	// create openstreetmap layer with cloudmade rendering 	
+  	var osm = new L.TileLayer('http://{s}.tile.cloudmade.com/cd33cf0ed5eb47bea3410fa19efe3c6a/1714/256/{z}/{x}/{y}.png', { 
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors'
+	});
+	osm.addTo(map);
+  	
+  	// add marker 
+	var marker = L.marker([47.07, 15.43], { 
+		title: 'my Position' 
+		// you need to add the marker images to your files
+	});
+	marker.addTo(map);
+
+	// add control functionality
+	var baseLayers = L.control.layers({
+		'OpenStreetMap': osm
+	});
+	baseLayers.addTo(map);
+</script>
