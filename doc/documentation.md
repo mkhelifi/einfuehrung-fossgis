@@ -1,21 +1,23 @@
 # WEB
 ## Glossar
-[Document Object Model](https://de.wikipedia.org/wiki/Document_Object_Model): Document Object Model (DOM) ist eine Spezifikation einer Schnittstelle für den Zugriff auf HTML- oder XML-Dokumente. Sie wird vom World Wide Web Consortium definiert. [5]
-[Ajax](https://de.wikipedia.org/wiki/Ajax_%28Programmierung%29): Ajax ist ein Apronym für die Wortfolge „Asynchronous JavaScript and XML“. Es bezeichnet ein Konzept der asynchronen Datenübertragung zwischen einem Browser und dem Server. Dieses ermöglicht es, HTTP-Anfragen durchzuführen, während eine HTML-Seite angezeigt wird, und die Seite zu verändern, ohne sie komplett neu zu laden.[6]
+- [Document Object Model](https://de.wikipedia.org/wiki/Document_Object_Model): Document Object Model (DOM) ist eine Spezifikation einer Schnittstelle für den Zugriff auf HTML- oder XML-Dokumente. Sie wird vom World Wide Web Consortium definiert. [5]
+- [Ajax](https://de.wikipedia.org/wiki/Ajax_%28Programmierung%29): Ajax ist ein Apronym für die Wortfolge „Asynchronous JavaScript and XML“. Es bezeichnet ein Konzept der asynchronen Datenübertragung zwischen einem Browser und dem Server. Dieses ermöglicht es, HTTP-Anfragen durchzuführen, während eine HTML-Seite angezeigt wird, und die Seite zu verändern, ohne sie komplett neu zu laden.[6]
 ## [HTML](http://www.w3.org/html/) + CSS
 Die Hypertext Markup Language (engl. ‚Hypertext-Auszeichnungssprache‘), abgekürzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung von Inhalten wie Texten, Bildern und Hyperlinks in Dokumenten. HTML-Dokumente sind die Grundlage des World Wide Web und werden von einem Webbrowser dargestellt. Neben den vom Browser angezeigten Inhalten einer Webseite enthält HTML zusätzliche Angaben in Form von Metainformationen, die z. B. über die im Text verwendete Sprache oder den Autor Auskunft geben oder den Inhalt des Textes zusammenfassen. [1]
-[HTML Referenzen @ Selfhtml](http://de.selfhtml.org/)
-[HTML Tutorial @ w3schools](http://www.w3schools.com/html/#gsc.tab=0)
-[Wiki](http://wiki.alpine-geckos.at/wiki/HTML)
-qu
+
+- [HTML Referenzen @ Selfhtml](http://de.selfhtml.org/)
+- [HTML Tutorial @ w3schools](http://www.w3schools.com/html/#gsc.tab=0)
+- [Wiki](http://wiki.alpine-geckos.at/wiki/HTML)
+
 Die Cascading Style Sheets für stufenförmige oder (hintereinander) geschachtelte Gestaltungsvorlagen, kurz CSS genannt, sind quasi eine deklarative Sprache für Stilvorlagen (engl. stylesheets) von strukturierten Dokumenten. Sie wird vor allem zusammen mit HTML und XML eingesetzt.[3]
-[CSS @ Selfhtml](http://de.selfhtml.org/css/)
-[CSS @ CSS4you](http://www.css4you.de/)
-[CSS Tutorial @ w3schools](http://www.w3schools.com/css/#gsc.tab=0)
-[Wiki](http://wiki.alpine-geckos.at/wiki/CSS)
+- [CSS @ Selfhtml](http://de.selfhtml.org/css/)
+- [CSS @ CSS4you](http://www.css4you.de/)
+- [CSS Tutorial @ w3schools](http://www.w3schools.com/css/#gsc.tab=0)
+- [Wiki](http://wiki.alpine-geckos.at/wiki/CSS)
 ### Lernen 
 - [Codeacademy](http://www.codecademy.com/de/tracks/web)
 - [Webplatform](http://www.webplatform.org/)
+
 ## JavaScript
 JavaScript (kurz JS) ist eine Skriptsprache, die hauptsächlich für dynamisches HTML in Web-Browsern eingesetzt wird. [2]
 [JavaScript @ Selfhtml](http://de.selfhtml.org/javascript/)
@@ -43,6 +45,7 @@ jQuery UI setzt auf jQuery auf und bietet erweiterte Funktionen zu User Interfac
 #### [jQueryGeo](http://jquerygeo.com/) 
 jQuery Geo ist eine Bibliothek für das räumliche Karten.
 - [Doc and Demos](http://docs.jquerygeo.com/)
+
 ### [Leaflet](http://leafletjs.com/)
 - [API Doc](http://leafletjs.com/reference.html)
 - [User Documentation](http://trac.osgeo.org/openlayers/wiki/Documentation)
@@ -54,6 +57,7 @@ The version we link in here is 2.12.
 - [Demos](http://dev.openlayers.org/releases/OpenLayers-2.12/examples/)
 #### Lernen
 - [The Wary Guide to OpenLayers](http://macwright.org/2012/01/12/openlayers.html)
+
 ### [D3.js](http://d3js.org/)
 D3 ist eine JavaScript Bibliothek, welche Dokumente basierend auf Daten manipuliert um Visualisierungen zu erstellen.
 - [Doc](https://github.com/mbostock/d3/wiki)
@@ -63,6 +67,7 @@ D3 ist eine JavaScript Bibliothek, welche Dokumente basierend auf Daten manipuli
 - [Doc](http://kartograph.org/docs/kartograph.py/)
 #### Kartograph.js
 - [Doc](http://kartograph.org/docs/kartograph.js/)
+
 ### [Sencha Ext JS](http://www.sencha.com/products/extjs/)
 Clientseitiges JavaScript bzw. Ajax-Framework für interaktive Webanwendungen. Die Software ist für Open-Source Projekt unter der GPLv3 erhältlich.
 - [Doc](http://docs.sencha.com/)
