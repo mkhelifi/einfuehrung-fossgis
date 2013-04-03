@@ -1,5 +1,31 @@
+# GEOINFORMATIC
+## GLOSSAR
+
+- [OGC](http://www.opengeospatial.org/)
+- [OSGeo](http://www.osgeo.org/)
+
+
+## WMS
+Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus Landkarten über das World Wide Web. Der WMS ist ein Spezialfall eines Web Services.[12]
+
+- Geoiamge Gateway Service
+- OGD Stadt Graz
+- USGS
+
+
+## WMF: Web Map Feature
+- OGD Stadt Graz
+
+## WMTS
+Der Standard Web Map Tile Service (WMTS) ist ein Geodienst, spezifiziert durch das Open Geospatial Consortium (OGC) und definiert einen Webservice, um digitale Karten kachelbasiert anbieten und abrufen zu können. [13]
+
+## Shapefiles
+
+- [Global Administrative Areas](http://www.gadm.org/)
+
+
 # WEB
-## Glossar
+
 - [Document Object Model](https://de.wikipedia.org/wiki/Document_Object_Model): Document Object Model (DOM) ist eine Spezifikation einer Schnittstelle für den Zugriff auf HTML- oder XML-Dokumente. Sie wird vom World Wide Web Consortium definiert. [5]
 - [Ajax](https://de.wikipedia.org/wiki/Ajax_%28Programmierung%29): Ajax ist ein Apronym für die Wortfolge „Asynchronous JavaScript and XML“. Es bezeichnet ein Konzept der asynchronen Datenübertragung zwischen einem Browser und dem Server. Dieses ermöglicht es, HTTP-Anfragen durchzuführen, während eine HTML-Seite angezeigt wird, und die Seite zu verändern, ohne sie komplett neu zu laden.[6]
 
@@ -135,16 +161,17 @@ GeoExt verbindet die räumlichen Funktionen von OpenLayers mit der Bedienoberfl�
 
 
 # DATABASES
-## postgreSQL
-- [Doc]()
-- [Demos]()
-- [Download]()
+## [postgreSQL](http://www.postgresql.org/)
+PostgreSQL ist ein freies, objektrelationales Datenbankmanagementsystem (ORDBMS). PostgreSQL ist weitgehend konform mit dem SQL-Standard ANSI-SQL 2008[4], d. h. der Großteil der Funktionen ist verfügbar und verhält sich wie definiert. [11]
+- [Doc](http://www.postgresql.org/docs/)
+- [Download](http://www.postgresql.org/download/)
 
 
-## postGIS
-- [Doc]()
-- [Demos]()
-- [Download]()
+## [postGIS](http://postgis.net/)
+PostGIS ist eine Erweiterung für die objektrelationale Datenbank PostgreSQL, die geografische Objekte und Funktionen umfasst. PostgreSQL mit PostGIS bildet eine Geodatenbank, die in Geoinformationssysteme eingebunden werden kann.[10]
+
+- [Doc](http://postgis.net/documentation)
+- [Download](http://postgis.net/install)
 
 
 ## [GeoAlchemy](https://geoalchemy-2.readthedocs.org/en/0.1/)
@@ -280,6 +307,7 @@ Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die u
 ### Learn
 
 - [try.github.com](http://www.codeschool.com/courses/try-git)
+- [GitRef](http://gitref.org/)
 
 
 ## [GitHub](https://www.github.com/)
@@ -289,8 +317,6 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 - [Demos]()
 - [Download]()
 
-
-# REFERENZEN
 [1]: https://de.wikipedia.org/wiki/Html
 [2]: https://de.wikipedia.org/wiki/Javascript
 [3]: https://de.wikipedia.org/wiki/Cascading_Style_Sheets
@@ -300,4 +326,7 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 [7]: https://de.wikipedia.org/wiki/Github
 [8]: https://de.wikipedia.org/wiki/Git
 [9]: https://de.wikipedia.org/wiki/Quantum_GIS
-
+[10]: https://de.wikipedia.org/wiki/PostGIS
+[11]: https://de.wikipedia.org/wiki/PostgreSQL
+[12]: https://de.wikipedia.org/wiki/Web_Map_Service
+[13]: https://de.wikipedia.org/wiki/Web_Map_Tile_Service
