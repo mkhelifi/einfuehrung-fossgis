@@ -1,6 +1,0 @@
-- git
-- apache (lampp??)
-- postgresql + postgis 
-- r + rstudio
-- python
-- qgis
