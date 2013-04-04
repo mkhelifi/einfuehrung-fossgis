@@ -8,20 +8,44 @@
 ## WMS
 Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus Landkarten über das World Wide Web. Der WMS ist ein Spezialfall eines Web Services.[12]
 
-- Geoiamge Gateway Service
-- OGD Stadt Graz
+- [Geoiamge Service Gateway](https://kunden.bmlfuw.lfrz.at/) => [Wiki](http://wiki.alpine-geckos.at/wiki/Geoimage_Service_Gateway)
+- [Verwaltungsgrenzen OGD Stadt Graz](http://data.graz.gv.at/daten/package/verwaltungsgrenzen)
+- [Orthophotos OGD Stadt Graz](http://data.graz.gv.at/daten/package/orthophotos)
+- [Baugrund OGD Stadt Graz](http://data.graz.gv.at/daten/package/baugrundkarte)
+- [Basiskarte OGD Stadt Graz](http://data.graz.gv.at/daten/package/hintergrundkarte-im-rasterformat)
 - USGS
 
 
-## WMF: Web Map Feature
-- OGD Stadt Graz
+## WMF
+Web Map Feature
 
 ## WMTS
 Der Standard Web Map Tile Service (WMTS) ist ein Geodienst, spezifiziert durch das Open Geospatial Consortium (OGC) und definiert einen Webservice, um digitale Karten kachelbasiert anbieten und abrufen zu können. [13]
 
 ## Shapefiles
+Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein von ESRI ursprünglich für ArcView entwickeltes Format für Geodaten. Es hat sich mittlerweile zu einer Art Quasi-Standard im Desktop-GIS-Umfeld verbreitet, da es ein recht einfaches und bezüglich der Datenqualität nur wenig anspruchsvolles Format darstellt.
 
-- [Global Administrative Areas](http://www.gadm.org/)
+Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
+
+- .shp dient zur Speicherung der Geometriedaten
+- .dbf Sachdaten im dBASE-Format
+- .shx dient als Index der Geometrie zur Verknüpfung der Sachdaten (auch Attributdaten genannt)
+
+In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.
+
+- Punkte,
+- Linien,
+- Flächen (Polygone)
+- oder Multi-Punkte[14]
+
+### Lernen
+
+- [ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
+
+
+### Data 
+
+- Administrative Areas](http://www.gadm.org/)
 
 
 # WEB
@@ -119,6 +143,16 @@ The version we link in here is 2.12.
 
 - [The Wary Guide to OpenLayers](http://macwright.org/2012/01/12/openlayers.html)
 
+
+### [Raphael](http://raphaeljs.com/)
+Raphael ist eine kleine JavaScript Bibliothek, welche das Arbeiten mit Vektor-Graphiken im Web vereinfacht.
+
+- [Doc](http://raphaeljs.com/reference.html)
+- [Download](
+
+#### Lernen
+
+- [Free Icons](http://raphaeljs.com/icons/)
 
 ### [D3.js](http://d3js.org/)
 D3 ist eine JavaScript Bibliothek, welche Dokumente basierend auf Daten manipuliert um Visualisierungen zu erstellen.
@@ -330,3 +364,4 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 [11]: https://de.wikipedia.org/wiki/PostgreSQL
 [12]: https://de.wikipedia.org/wiki/Web_Map_Service
 [13]: https://de.wikipedia.org/wiki/Web_Map_Tile_Service
+[14]: https://de.wikipedia.org/wiki/Shapefile
