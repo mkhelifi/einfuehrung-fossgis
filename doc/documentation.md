@@ -9,6 +9,9 @@ Dabei wird der gesamte Arbeitsprozess von der Gewinnung von Daten, deren Verwalt
 - [OGC](http://www.opengeospatial.org/)
 - [OSGeo](http://www.osgeo.org/)
 
+### Vektordaten
+
+### Rasterdaten
 
 ### WMS
 Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus Landkarten über das World Wide Web. Der WMS ist ein Spezialfall eines Web Services.[12]
@@ -30,12 +33,22 @@ Der Standard Web Map Tile Service (WMTS) ist ein Geodienst, spezifiziert durch d
 ### WPS
 Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine räumliche Analyse von Geodaten durchzuführen. [17]
 
+### Koordinatenreferenzsysteme
+- [Geodätisches Datum](https://de.wikipedia.org/wiki/Geod%C3%A4tisches_Datum)
+- [Koordinatenreferenzsystem](https://de.wikipedia.org/wiki/Koordinatenreferenzsystem)
+- [Azimut](https://de.wikipedia.org/wiki/Azimut)
+- [Koordinatentransformation](https://de.wikipedia.org/wiki/Koordinatentransformation)
 
-
+- EPSG / SRID : Der EPSG-Code ist ein System weltweit eindeutiger 4- bis 5-stelliger Schlüsselnummern für Koordinatenreferenzsysteme und andere geodätische Datensätze. Die Informationen zu den EPSG-Codes liegen in einer Datenbank vor, die auf der Internetseite der ehemaligen EPSG zum Download angeboten wird. [20] [Wiki](http://wiki.alpine-geckos.at/wiki/SRID)
+- [UTM](https://de.wikipedia.org/wiki/UTM-Koordinatensystem)
+- [WGS 84](https://de.wikipedia.org/wiki/WGS84)
+- [EPSG Codes](http://www.epsg-registry.org/)
+- [Spatial References](http://www.spatialreference.org/)
+- [EPSG Codes für Österreich](http://www.esri-austria.at/downloads/coords_at.html)
 
 #### Data 
 
-- Administrative Areas](http://www.gadm.org/)
+- [Administrative Areas](http://www.gadm.org/)
 
 
 ### [QUANTUM GIS](http://www.qgis.org/)
@@ -85,6 +98,13 @@ Mittels unterschiedlicher Erweiterungen kann die Funktionalität stark ausgebaut
 - Textdatei als Layer importieren
 - Zonenstatistikerweiterung
 - eVis
+- mmqgis
+- openlayers
+- WFS 2.0 Client
+- PostGIS Plugin
+- HTML Image Map Plugin
+- Centroids Maker
+- Map Coloring
 
 
 ## WEB
@@ -349,7 +369,7 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 ## DATA 
 
 - [NASA Geländemodell(SRTM)](https://de.wikipedia.org/wiki/SRTM-Daten): Public Domain Rasterdaten
-
+- [Natural Earth](http://www.slashgeo.org/2012/11/28/Natural-Earth-v200-Released)
 
 ## FILEFORMATS
 
@@ -408,3 +428,4 @@ Ein GeoTIFF ist eine spezielle Form eines TIFF-Bildes, also ein Dateiformat zur 
 [17]: https://de.wikipedia.org/wiki/Web_Processing_Service
 [18]: https://de.wikipedia.org/wiki/Gpx
 [19]: https://de.wikipedia.org/wiki/GeoTIFF
+[20]: https://de.wikipedia.org/wiki/EPSG#EPSG-Codes
