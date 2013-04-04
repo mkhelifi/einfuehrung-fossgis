@@ -21,31 +21,16 @@ Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus L
 - USGS
 
 
-### WMF
-Web Map Feature
+### WFS
+Unter einem WFS (Web Feature Service) versteht man den internetgestützten Zugriff auf Geodaten innerhalb eines verteilten GIS. Der WFS beschränkt sich dabei ausschließlich auf Vektordaten, wie sie in Datenbanken abgelegt werden können. Er legt fest, in welcher Weise ein Client mit einem Geodienst bei der Ausführung einer geographischen Analyse interagiert. Er erhält dadurch Zugriff auf vordefinierte Rechenvorschriften oder -modelle, die samt den benötigten Geodaten auf einem Server liegen. [16]
 
 ### WMTS
 Der Standard Web Map Tile Service (WMTS) ist ein Geodienst, spezifiziert durch das Open Geospatial Consortium (OGC) und definiert einen Webservice, um digitale Karten kachelbasiert anbieten und abrufen zu können. [13]
 
-### Shapefiles
-Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein von ESRI ursprünglich für ArcView entwickeltes Format für Geodaten. Es hat sich mittlerweile zu einer Art Quasi-Standard im Desktop-GIS-Umfeld verbreitet, da es ein recht einfaches und bezüglich der Datenqualität nur wenig anspruchsvolles Format darstellt.
+### WPS
+Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine räumliche Analyse von Geodaten durchzuführen. [17]
 
-Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
 
-- .shp dient zur Speicherung der Geometriedaten
-- .dbf Sachdaten im dBASE-Format
-- .shx dient als Index der Geometrie zur Verknüpfung der Sachdaten (auch Attributdaten genannt)
-
-In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.
-
-- Punkte,
-- Linien,
-- Flächen (Polygone)
-- oder Multi-Punkte[14]
-
-#### Lernen
-
-- [ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 
 
 #### Data 
@@ -70,6 +55,7 @@ Mittels unterschiedlicher Erweiterungen kann die Funktionalität stark ausgebaut
 - [Introduction GIS worksheets](http://linfiniti.com/dla/)
 - [Baruch](http://www.baruch.cuny.edu/geoportal/practicum/)
 - [Tutorials @ SpatialThoughts](http://qgis.spatialthoughts.com/)
+- [Ubuntu Packetquellen](http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu)
 
 
 #### PyQGIS
@@ -350,17 +336,59 @@ Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die u
 #### [GitHub](https://www.github.com/)
 GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. Er verwendet namensgebenderweise das Versionsverwaltungs-System Git.[7]
 
-- [Doc]()
-- [Demos]()
-- [Download]()
-
 ##### Lernen
 
 - [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/)
 - [Training](http://training.github.com/)
 
 
+## OPENSTREETMAP
 
+- [Overpass Turbo](http://overpass-turbo.eu/)
+
+## DATA 
+
+- [NASA Geländemodell(SRTM)](https://de.wikipedia.org/wiki/SRTM-Daten): Public Domain Rasterdaten
+
+
+## FILEFORMATS
+
+### Shapefiles
+Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein von ESRI ursprünglich für ArcView entwickeltes Format für Geodaten. Es hat sich mittlerweile zu einer Art Quasi-Standard im Desktop-GIS-Umfeld verbreitet, da es ein recht einfaches und bezüglich der Datenqualität nur wenig anspruchsvolles Format darstellt.
+
+Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
+
+- .shp dient zur Speicherung der Geometriedaten
+- .dbf Sachdaten im dBASE-Format
+- .shx dient als Index der Geometrie zur Verknüpfung der Sachdaten (auch Attributdaten genannt)
+
+In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.
+
+- Punkte,
+- Linien,
+- Flächen (Polygone)
+- oder Multi-Punkte[14]
+
+#### Lernen
+
+- [ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
+
+
+### KML
+Keyhole Markup Language (KML) ist eine Auszeichnungssprache zur Beschreibung von Geodaten für die Client-Komponenten der Programme Google Earth und Google Maps. KML befolgt die XML-Syntax, liegt in der Version 2.2 vor und ist ein Standard des Open Geospatial Consortium. [15]
+
+### GPX
+D as GPS Exchange Format (GPX) ist ein Datenformat zur Speicherung von Geodaten (GPS-Daten), das von der Firma TopoGrafix entwickelt wurde. Es basiert auf dem allgemeinen XML-Standard. Das GPS Exchange Format ist ein offenes, lizenzfreies Format, das von jedem gebührenfrei verwendet werden darf. Es soll den Austausch von Geodaten zwischen verschiedenen Programmen erleichtern. 	[18]
+
+### GeoTIFF
+Ein GeoTIFF ist eine spezielle Form eines TIFF-Bildes, also ein Dateiformat zur Speicherung von Bilddaten (Dateinamenserweiterung .geotiff, oft auch nur .tif). Da das TIF-Format eine verlustfreie Speicherung zulässt, eignet es sich gut zur Verarbeitung von geographischen Daten, da es bei Satelliten- und Luftbildern bzw. anderen Rasterdaten oft auf hohe Abbildungsgenauigkeit ankommt. [19]
+[Spezifikation](http://www.remotesensing.org/geotiff/spec/geotiffhome.html)
+
+### GeoJPEG
+
+### CSV
+
+### 
 [1]: https://de.wikipedia.org/wiki/Html
 [2]: https://de.wikipedia.org/wiki/Javascript
 [3]: https://de.wikipedia.org/wiki/Cascading_Style_Sheets
@@ -375,3 +403,8 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 [12]: https://de.wikipedia.org/wiki/Web_Map_Service
 [13]: https://de.wikipedia.org/wiki/Web_Map_Tile_Service
 [14]: https://de.wikipedia.org/wiki/Shapefile
+[15]: https://de.wikipedia.org/wiki/Keyhole_Markup_Language
+[16]: https://de.wikipedia.org/wiki/Web_Feature_Service
+[17]: https://de.wikipedia.org/wiki/Web_Processing_Service
+[18]: https://de.wikipedia.org/wiki/Gpx
+[19]: https://de.wikipedia.org/wiki/GeoTIFF
