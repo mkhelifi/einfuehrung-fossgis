@@ -1,13 +1,18 @@
 # Einleitende Informationen zu FOSSGIS
-Hier werden Informationen für BeginnerInnen rund um Free and Open Source Geoinformatic Software gesammelt und aufbereitet. JedeR ist herzlich dazu aufgerufen, sein/ihr Know How mit ein zu bringen.
+Hier werden kollaborativ Informationen für BeginnerInnen rund um Free and Open Source Geoinformatic Software gesammelt und aufbereitet. JedeR ist herzlich dazu aufgerufen, sein/ihr Know How zu teilen.
 
-Dabei wird der gesamte Arbeitsprozess von der Gewinnung von Daten, deren Verwaltung sowie Verwendung in einem GIS System, mit Programmiersprachen und im Web angegangen.
+Es wird der gesamte Arbeitsprozess von 
 
-## GEOINFORMATIC
-### GLOSSAR
+- der Erzeugung von Daten
+- deren Verwaltung (Datenbanken, Dateiformate, etc)
+- Analyse in einem GIS System, mit Programmiersprachen
+- Präsentation im Web und im GIS
 
-- [OGC](http://www.opengeospatial.org/)
-- [OSGeo](http://www.osgeo.org/)
+## ALLGEMEIN
+
+### [OGC](http://www.opengeospatial.org/)
+
+### [OSGeo](http://www.osgeo.org/)
 
 ### Vektordaten
 
@@ -15,14 +20,6 @@ Dabei wird der gesamte Arbeitsprozess von der Gewinnung von Daten, deren Verwalt
 
 ### WMS
 Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus Landkarten über das World Wide Web. Der WMS ist ein Spezialfall eines Web Services.[12]
-
-- [Geoiamge Service Gateway](https://kunden.bmlfuw.lfrz.at/) => [Wiki](http://wiki.alpine-geckos.at/wiki/Geoimage_Service_Gateway)
-- [Verwaltungsgrenzen OGD Stadt Graz](http://data.graz.gv.at/daten/package/verwaltungsgrenzen)
-- [Orthophotos OGD Stadt Graz](http://data.graz.gv.at/daten/package/orthophotos)
-- [Baugrund OGD Stadt Graz](http://data.graz.gv.at/daten/package/baugrundkarte)
-- [Basiskarte OGD Stadt Graz](http://data.graz.gv.at/daten/package/hintergrundkarte-im-rasterformat)
-- USGS
-
 
 ### WFS
 Unter einem WFS (Web Feature Service) versteht man den internetgestützten Zugriff auf Geodaten innerhalb eines verteilten GIS. Der WFS beschränkt sich dabei ausschließlich auf Vektordaten, wie sie in Datenbanken abgelegt werden können. Er legt fest, in welcher Weise ein Client mit einem Geodienst bei der Ausführung einer geographischen Analyse interagiert. Er erhält dadurch Zugriff auf vordefinierte Rechenvorschriften oder -modelle, die samt den benötigten Geodaten auf einem Server liegen. [16]
@@ -38,19 +35,52 @@ Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine
 - [Koordinatenreferenzsystem](https://de.wikipedia.org/wiki/Koordinatenreferenzsystem)
 - [Azimut](https://de.wikipedia.org/wiki/Azimut)
 - [Koordinatentransformation](https://de.wikipedia.org/wiki/Koordinatentransformation)
-
 - EPSG / SRID : Der EPSG-Code ist ein System weltweit eindeutiger 4- bis 5-stelliger Schlüsselnummern für Koordinatenreferenzsysteme und andere geodätische Datensätze. Die Informationen zu den EPSG-Codes liegen in einer Datenbank vor, die auf der Internetseite der ehemaligen EPSG zum Download angeboten wird. [20] [Wiki](http://wiki.alpine-geckos.at/wiki/SRID)
-- [UTM](https://de.wikipedia.org/wiki/UTM-Koordinatensystem)
-- [WGS 84](https://de.wikipedia.org/wiki/WGS84)
-- [EPSG Codes](http://www.epsg-registry.org/)
-- [Spatial References](http://www.spatialreference.org/)
-- [EPSG Codes für Österreich](http://www.esri-austria.at/downloads/coords_at.html)
-
-#### Data 
-
-- [Administrative Areas](http://www.gadm.org/)
+	- [UTM](https://de.wikipedia.org/wiki/UTM-Koordinatensystem)
+	- [WGS 84](https://de.wikipedia.org/wiki/WGS84)
+	- [EPSG Codes](http://www.epsg-registry.org/)
+	- [Spatial References](http://www.spatialreference.org/)
+	- [EPSG Codes für Österreich](http://www.esri-austria.at/downloads/coords_at.html)
 
 
+### DATEIFORMATE
+
+#### Shapefiles
+Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein von ESRI ursprünglich für ArcView entwickeltes Format für Geodaten. Es hat sich mittlerweile zu einer Art Quasi-Standard im Desktop-GIS-Umfeld verbreitet, da es ein recht einfaches und bezüglich der Datenqualität nur wenig anspruchsvolles Format darstellt.
+
+Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
+
+- .shp dient zur Speicherung der Geometriedaten
+- .dbf Sachdaten im dBASE-Format
+- .shx dient als Index der Geometrie zur Verknüpfung der Sachdaten (auch Attributdaten genannt)
+
+In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.
+
+- Punkte,
+- Linien,
+- Flächen (Polygone)
+- oder Multi-Punkte[14]
+
+##### Lernen
+
+- [ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
+
+
+#### KML
+Keyhole Markup Language (KML) ist eine Auszeichnungssprache zur Beschreibung von Geodaten für die Client-Komponenten der Programme Google Earth und Google Maps. KML befolgt die XML-Syntax, liegt in der Version 2.2 vor und ist ein Standard des Open Geospatial Consortium. [15]
+
+#### GPX
+D as GPS Exchange Format (GPX) ist ein Datenformat zur Speicherung von Geodaten (GPS-Daten), das von der Firma TopoGrafix entwickelt wurde. Es basiert auf dem allgemeinen XML-Standard. Das GPS Exchange Format ist ein offenes, lizenzfreies Format, das von jedem gebührenfrei verwendet werden darf. Es soll den Austausch von Geodaten zwischen verschiedenen Programmen erleichtern. 	[18]
+
+#### GeoTIFF
+Ein GeoTIFF ist eine spezielle Form eines TIFF-Bildes, also ein Dateiformat zur Speicherung von Bilddaten (Dateinamenserweiterung .geotiff, oft auch nur .tif). Da das TIF-Format eine verlustfreie Speicherung zulässt, eignet es sich gut zur Verarbeitung von geographischen Daten, da es bei Satelliten- und Luftbildern bzw. anderen Rasterdaten oft auf hohe Abbildungsgenauigkeit ankommt. [19]
+[Spezifikation](http://www.remotesensing.org/geotiff/spec/geotiffhome.html)
+
+#### GeoJPEG
+
+#### CSV
+
+## GEOINFORMATIONSSYSTEME
 ### [QUANTUM GIS](http://www.qgis.org/)
 Quantum GIS (QGIS) ist ein freies Geoinformationssystem zum Betrachten, Bearbeiten und Erfassen von räumlichen Daten.[9]
 Mittels unterschiedlicher Erweiterungen kann die Funktionalität stark ausgebaut werden, wie zum Beispiel auf GRASS, GDAL, R oder Python zugegriffen werden.
@@ -69,10 +99,7 @@ Mittels unterschiedlicher Erweiterungen kann die Funktionalität stark ausgebaut
 - [Baruch](http://www.baruch.cuny.edu/geoportal/practicum/)
 - [Tutorials @ SpatialThoughts](http://qgis.spatialthoughts.com/)
 - [Ubuntu Packetquellen](http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu)
-
-
-#### PyQGIS
-[PyQGIS Developer Cookbook](http://qgis.org/pyqgis-cookbook/)
+- [PyQGIS Developer Cookbook](http://qgis.org/pyqgis-cookbook/)
 
 
 #### Erweiterungen
@@ -194,7 +221,7 @@ jQuery Geo ist eine Bibliothek für das räumliche Karten.
 #### [OpenLayers](http://openlayers.org/)
 The version we link in here is 2.12. 
 
-- [Doc]http://dev.openlayers.org/releases/OpenLayers-2.12/doc/apidocs/files/OpenLayers-js.html()
+- [Doc](http://dev.openlayers.org/releases/OpenLayers-2.12/doc/apidocs/files/OpenLayers-js.html)
 - [Demos](http://dev.openlayers.org/releases/OpenLayers-2.12/examples/)
 
 
@@ -207,7 +234,6 @@ The version we link in here is 2.12.
 Raphael ist eine kleine JavaScript Bibliothek, welche das Arbeiten mit Vektor-Graphiken im Web vereinfacht.
 
 - [Doc](http://raphaeljs.com/reference.html)
-- [Download](
 
 ##### Lernen
 
@@ -253,7 +279,7 @@ GeoExt verbindet die räumlichen Funktionen von OpenLayers mit der Bedienoberfl�
 - [Codeacademy](http://www.codecademy.com/de/tracks/apis)
 
 
-## DATABASES
+## DATENBANKEN
 ### [postgreSQL](http://www.postgresql.org/)
 PostgreSQL ist ein freies, objektrelationales Datenbankmanagementsystem (ORDBMS). PostgreSQL ist weitgehend konform mit dem SQL-Standard ANSI-SQL 2008[4], d. h. der Großteil der Funktionen ist verfügbar und verhält sich wie definiert. [11]
 - [Doc](http://www.postgresql.org/docs/)
@@ -268,8 +294,9 @@ PostGIS ist eine Erweiterung für die objektrelationale Datenbank PostgreSQL, di
 
 
 ### [GeoAlchemy](https://geoalchemy-2.readthedocs.org/en/0.1/)
+
 ## PROGRAMMIEREN
-### GRUNDLEGENDES
+### ALLGEMEIN
 
 - Code immer ausreichend kommentieren, so dass auch nach längerer Zeit der Ablauf des Programmes noch verstanden wird.
 - Eine klare, leicht lesbare Notation für Variablen-, Funktions und Klassennamen definieren und strikt einhalten.
@@ -358,57 +385,53 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 
 ##### Lernen
 
-- [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/)
 - [Training](http://training.github.com/)
+- [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/)
+- [Markdown](http://daringfireball.net/projects/markdown/)
+
+
+## DATEN
+
+### Vektor
+
+- Steiermark
+	- [Bezirksgrenzen](http://data.steiermark.at/cms/beitrag/11822084/97108894/?AppInt_OGD_ID=32)
+	- [Gemeindegrenzen](http://data.steiermark.at/cms/beitrag/11822084/97108894/?AppInt_OGD_ID=4)
+- International
+	- [Administrative Areas](http://www.gadm.org/)
+
+
+### Raster
+
+	- [Alle](http://glcf.umd.edu/data/srtm/)
+	- [Westöstereich](ftp://srtm.csi.cgiar.org/SRTM_V41/SRTM_Data_GeoTiff/srtm_39_03.zip)
+	- [Ostösterreich](ftp://srtm.csi.cgiar.org/SRTM_V41/SRTM_Data_GeoTiff/srtm_40_03.zip)
+- [Natural Earth](http://www.slashgeo.org/2012/11/28/Natural-Earth-v200-Released)
+
+
+### WMS 
+
+- Graz
+	- [Verwaltungsgrenzen OGD Stadt Graz](http://data.graz.gv.at/daten/package/verwaltungsgrenzen)
+	- [Orthophotos OGD Stadt Graz](http://data.graz.gv.at/daten/package/orthophotos)
+	- [Baugrund OGD Stadt Graz](http://data.graz.gv.at/daten/package/baugrundkarte)
+	- [Basiskarte OGD Stadt Graz](http://data.graz.gv.at/daten/package/hintergrundkarte-im-rasterformat)
+- Steiermark
+	- [Flächenwidmungsplan](http://data.steiermark.at/cms/beitrag/11822084/97108894/?AppInt_OGD_ID=33)
+- Österreich
+	- [Geoiamge Service Gateway](https://kunden.bmlfuw.lfrz.at/) => [Wiki](http://wiki.alpine-geckos.at/wiki/Geoimage_Service_Gateway)
+- International
+	- [OpenStreetMap WMS](http://129.206.228.72/cached/hillshade?Request=GetCapabilities)
+	- USGS
 
 
 ## OPENSTREETMAP
 
 - [Overpass Turbo](http://overpass-turbo.eu/)
+- [Overpass API](http://overpass-api.de/)
+- [Overpass Inspector](http://tools.geofabrik.de/osmi/)
+- [OpenStreetMap WMS](http://129.206.228.72/cached/hillshade?Request=GetCapabilities)
 
-## DATA 
-
-- [NASA Geländemodell(SRTM)](https://de.wikipedia.org/wiki/SRTM-Daten): Public Domain Rasterdaten
-- [Natural Earth](http://www.slashgeo.org/2012/11/28/Natural-Earth-v200-Released)
-
-## FILEFORMATS
-
-### Shapefiles
-Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein von ESRI ursprünglich für ArcView entwickeltes Format für Geodaten. Es hat sich mittlerweile zu einer Art Quasi-Standard im Desktop-GIS-Umfeld verbreitet, da es ein recht einfaches und bezüglich der Datenqualität nur wenig anspruchsvolles Format darstellt.
-
-Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
-
-- .shp dient zur Speicherung der Geometriedaten
-- .dbf Sachdaten im dBASE-Format
-- .shx dient als Index der Geometrie zur Verknüpfung der Sachdaten (auch Attributdaten genannt)
-
-In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.
-
-- Punkte,
-- Linien,
-- Flächen (Polygone)
-- oder Multi-Punkte[14]
-
-#### Lernen
-
-- [ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
-
-
-### KML
-Keyhole Markup Language (KML) ist eine Auszeichnungssprache zur Beschreibung von Geodaten für die Client-Komponenten der Programme Google Earth und Google Maps. KML befolgt die XML-Syntax, liegt in der Version 2.2 vor und ist ein Standard des Open Geospatial Consortium. [15]
-
-### GPX
-D as GPS Exchange Format (GPX) ist ein Datenformat zur Speicherung von Geodaten (GPS-Daten), das von der Firma TopoGrafix entwickelt wurde. Es basiert auf dem allgemeinen XML-Standard. Das GPS Exchange Format ist ein offenes, lizenzfreies Format, das von jedem gebührenfrei verwendet werden darf. Es soll den Austausch von Geodaten zwischen verschiedenen Programmen erleichtern. 	[18]
-
-### GeoTIFF
-Ein GeoTIFF ist eine spezielle Form eines TIFF-Bildes, also ein Dateiformat zur Speicherung von Bilddaten (Dateinamenserweiterung .geotiff, oft auch nur .tif). Da das TIF-Format eine verlustfreie Speicherung zulässt, eignet es sich gut zur Verarbeitung von geographischen Daten, da es bei Satelliten- und Luftbildern bzw. anderen Rasterdaten oft auf hohe Abbildungsgenauigkeit ankommt. [19]
-[Spezifikation](http://www.remotesensing.org/geotiff/spec/geotiffhome.html)
-
-### GeoJPEG
-
-### CSV
-
-### 
 [1]: https://de.wikipedia.org/wiki/Html
 [2]: https://de.wikipedia.org/wiki/Javascript
 [3]: https://de.wikipedia.org/wiki/Cascading_Style_Sheets
