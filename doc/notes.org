@@ -1,0 +1,8 @@
+* TODO
+- Script zum automatischen aufsummieren von den Bezirksfusionen
+- OpenLayers Beispiele
+- Kartograph Beispiele coden
+- Thematische Karten in QGIS
+- R Spatial files überarbeiten
+- Lizenzen adden
+- documentation.md überarbeiten

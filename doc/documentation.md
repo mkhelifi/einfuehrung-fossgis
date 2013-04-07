@@ -42,10 +42,14 @@ Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine
 	- [Spatial References](http://www.spatialreference.org/)
 	- [EPSG Codes für Österreich](http://www.esri-austria.at/downloads/coords_at.html)
 
+### Lernen
 
-### DATEIFORMATE
+- [GIS Grundlagen mit Quantum GIS](http://cms.uni-kassel.de/asl/fileadmin/daten/Einrichtungen/Geo-Info/konferenz/Folien/QGIS_Basisfunktionen_zum_Workshop_onlinedaten.pdf)
 
-#### Shapefiles
+
+## DATEIFORMATE
+
+### Shapefiles
 Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein von ESRI ursprünglich für ArcView entwickeltes Format für Geodaten. Es hat sich mittlerweile zu einer Art Quasi-Standard im Desktop-GIS-Umfeld verbreitet, da es ein recht einfaches und bezüglich der Datenqualität nur wenig anspruchsvolles Format darstellt.
 
 Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
@@ -61,24 +65,62 @@ In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.
 - Flächen (Polygone)
 - oder Multi-Punkte[14]
 
-##### Lernen
+[ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 
-- [ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
-
-
-#### KML
+### KML
 Keyhole Markup Language (KML) ist eine Auszeichnungssprache zur Beschreibung von Geodaten für die Client-Komponenten der Programme Google Earth und Google Maps. KML befolgt die XML-Syntax, liegt in der Version 2.2 vor und ist ein Standard des Open Geospatial Consortium. [15]
 
-#### GPX
+### GPX
 D as GPS Exchange Format (GPX) ist ein Datenformat zur Speicherung von Geodaten (GPS-Daten), das von der Firma TopoGrafix entwickelt wurde. Es basiert auf dem allgemeinen XML-Standard. Das GPS Exchange Format ist ein offenes, lizenzfreies Format, das von jedem gebührenfrei verwendet werden darf. Es soll den Austausch von Geodaten zwischen verschiedenen Programmen erleichtern. 	[18]
 
-#### GeoTIFF
+### GeoTIFF
 Ein GeoTIFF ist eine spezielle Form eines TIFF-Bildes, also ein Dateiformat zur Speicherung von Bilddaten (Dateinamenserweiterung .geotiff, oft auch nur .tif). Da das TIF-Format eine verlustfreie Speicherung zulässt, eignet es sich gut zur Verarbeitung von geographischen Daten, da es bei Satelliten- und Luftbildern bzw. anderen Rasterdaten oft auf hohe Abbildungsgenauigkeit ankommt. [19]
 [Spezifikation](http://www.remotesensing.org/geotiff/spec/geotiffhome.html)
 
-#### GeoJPEG
+### GeoJPEG
 
-#### CSV
+### CSV
+
+### [dBase](https://en.wikipedia.org/wiki/DBase)
+dBASE war die erste weithin genutzte dateibasierende Datenbank-Applikation, genauer ein Datenbankmanagementsystem (DBMS) für Mikrocomputer, das von dem Unternehmen Ashton-Tate ursprünglich für das Betriebssystem CP/M entwickelt und vertrieben wurde. Später wurde die Datenbank-Applikation auf den IBM-PC unter DOS portiert. Die Grundidee des dBASE-Systems ist, die Tabellen einer Datenbank in speziell strukturierten Dateien (DataBaseFiles = DBF) zu halten und zur Verarbeitung eine 4GL-Sprache bereitzustellen. [22]
+
+## Analyse & Präsentation
+
+### Voronoi Diagramm
+Als Voronoi-Diagramm, auch Thiessen-Polygonen oder Dirichlet-Zerlegung, wird eine Zerlegung des Raumes in Regionen bezeichnet, die durch eine vorgegebene Menge an Punkten des Raumes, hier als Zentren bezeichnet, bestimmt werden. Jede Region wird durch genau ein Zentrum bestimmt und umfasst alle Punkte des Raumes, die in Bezug zur euklidischen Metrik näher an dem Zentrum der Region liegen, als an jedem anderen Zentrum. Derartige Regionen werden auch als Voronoi-Regionen bezeichnet. Aus allen Punkten, die mehr als ein nächstgelegenes Zentrum besitzen und somit die Grenzen der Regionen bilden, entsteht das Voronoi-Diagramm. [23]
+
+![Voronoi Diagramm](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Voronoi_diagram.svg/310px-Voronoi_diagram.svg.png)
+
+### Delaunay Triangulation
+Die Delaunay-Triangulation ist ein gebräuchliches Verfahren, um aus einer Punktemenge ein Dreiecksnetz zu erstellen. Mit dem Verfahren der Delaunay-Triangulation werden Punkte im \mathbb{R}^2 so zu Dreiecken vernetzt, dass innerhalb des Kreises, auf dem die drei Dreieckspunkte liegen, keine anderen Punkte enthalten sind. Man verwendet das Verfahren zum Beispiel zur Optimierung von Berechnungsnetzen für die Finite-Elemente-Methode [24]
+
+### Inverse Distanzgewichtung
+Die Inverse Distanzwichtung ist ein nichtstatistisches Interpolationsverfahren der Geostatistik und wird zur einfachen Interpolation der räumlichen Abhängigkeit georeferenzierter Daten genutzt. Dabei gilt als Grundannahme, dass die Ähnlichkeit eines unbekannten Wertes zum bekannten Messwert mit der Entfernung von diesem abnimmt, die Daten also umso unähnlicher sind, je weiter sie auseinander liegen. Dieser Zusammenhang wird bei der inversen Distanzwichtung dadurch zum Ausdruck gebracht, dass der Messwert mit einem Gewicht multipliziert wird, das proportional zum Inversen des Abstands zwischen Schätzpunkt und Messort ist. [26]
+
+### Kriging
+Unter Kriging (oder auch: Krigen) versteht man ein geostatistisches Verfahren, mit dem man Werte an Orten, für die keine Stichprobe vorliegt durch umliegende Messwerte interpolieren oder auch annähern kann.Der wesentliche Vorteil gegenüber einfacheren Methoden wie beispielsweise der Inversen Distanzgewichtung ist die Berücksichtigung der räumlichen Varianz, die sich mit Hilfe der Semivariogramme ermitteln lässt. Für einen gesuchten Wert werden dabei die Gewichte der in die Berechnung einfließenden Messwerte so bestimmt, dass die Schätzfehlervarianz möglichst gering ist. Der Fehler hängt dabei von der Qualität des Variogramms bzw. der Variogrammfunktion ab. [25]
+
+### Semivariogramm
+Ein Semivariogramm (kurz: Variogramm) stellt die räumliche Beziehung eines Punktes (regionalisierte Variable) zu Nachbarpunkten dar. Dazu werden in verschiedenen Entfernungsstufen ("lag") Punktpaare gebildet. Die quadrierten Differenzen der Paare werden dann aufsummiert und durch die Menge der Punkte geteilt (siehe auch Varianz). Es ergibt sich die Semivarianz, die in einem zweidimensionalen Diagramm als Funktion der Entfernung zum Bezugspunkt dargestellt wird.
+
+Im Idealfall ergeben sich Grundformen, die durch mathematische Funktionen beschrieben werden können (theoretische Variogramme): - spherische Variogramme, - exponentielle Variogramme, - lineare Variogramme und - gausssche Variogramme. Semiovarigramme finden Anwendung beim Kriging[27]
+
+### Nächste-Nachbarn-Klassifikation
+Die Nächste-Nachbarn-Klassifikation ist eine parameterfreie Methode zur Schätzung von Wahrscheinlichkeitsdichtefunktionen. Der daraus resultierende k-Nearest-Neighbor-Algorithmus (KNN, zu deutsch „k-nächste-Nachbarn-Algorithmus“) ist ein Klassifikationsverfahren, bei dem eine Klassenzuordnung unter Berücksichtigung seiner k nächsten Nachbarn vorgenommen wird. Der Teil des Lernens besteht aus simplem Abspeichern der Trainingsbeispiele, was auch als lazy learning („träges Lernen“) bezeichnet wird. [28]
+
+### Topografische Karte
+Die topografische Karte (auch topographische Karte oder Landkarte) ist eine mittel- bis großmaßstäbige Karte, die zur genauen Abbildung der Geländeformen (Topografie) und anderer sichtbarer Details der Erdoberfläche dient. Das Gelände wird meist durch Höhenlinien dargestellt, ergänzt um markante Höhenpunkte (Gipfel, Sättel usw.) und den Verlauf der Gewässer.
+
+Zum Inhalt solcher Karten gehören auch Straßen, Bahnlinien, größere Gebäude, die Umrisse von Ortschaften und andere technische Sachverhalte wie Grenzen, Wasser- oder Stromleitungen. Alle diese geografischen Objekte werden entsprechend dem Maßstab lagerichtig und vollständig durch ein System kartografischer Zeichen wiedergegeben. [31]
+
+### Thematische Karten
+Thematische Karten oder angewandte Karten sind Karten, die ein bestimmtes Merkmal oder Thema verbildlichen, beispielsweise Pflanzenverbreitung oder Bevölkerungsdichte. Auch Zusammenhänge thematischer Ebenen lassen sich darstellen, z. B. zwischen Merkmalen und ihrer zeitlichen Änderung. Im Gegensatz zu topografischen Karten (Landkarten), die vor allem der Orientierung im Gelände und der Ausmessung von Standorten bzw. geometrischen Details dienen, werden in thematischen Karten Objekte „zur Kenntnis ihrer selbst“ dargestellt. Neben dem Sachbezug, sind der Zeitbezug (Stichtag oder Zeitraum) und der Raumbezug die wesentlichen Eigenschaften einer thematischen Karte: der dargestellte Sachverhalt gilt für einen bestimmten Zeitpunkt oder Zeitraum und für einen bestimmten Ort oder statistische Raumbezugseinheit. [30]
+
+#### Kartogramm
+Kartogramme sind thematische Karten, in denen quantitative Aussagen auf festgelegten Bezugsflächen dargestellt werden. Die jeweilige Angabe gilt für die gesamte Fläche, ohne interne Variationen zu beachten. Häufig werden statistische Angaben, die auf einer Ebene der Verwaltungsgliederung erhoben wurden, als Kartogramm dargestellt. [29]
+
+- [Choroplethenkarte](https://de.wikipedia.org/wiki/Choroplethenkarte)
+
 
 ## GEOINFORMATIONSSYSTEME
 ### [QUANTUM GIS](http://www.qgis.org/)
@@ -366,6 +408,33 @@ Für R gibt es eine vielzahl an Quellen zum Lernen im Internet und als Literatur
 
 - [Codeacademy](http://www.codecademy.com/de/tracks/python)
 
+
+### Shell
+Die Unix-Shell oder kurz Shell (englisch für Hülle, Schale) bezeichnet die traditionelle Benutzerschnittstelle unter Unix oder unixoiden Computer-Betriebssystemen. Der Benutzer kann in einer Eingabezeile Kommandos eintippen, die der Computer dann sogleich ausführt. Man spricht darum auch von einem Kommandozeileninterpreter. [21]
+
+#### Programme
+
+- sed
+- [awk](https://de.wikipedia.org/wiki/Awk)
+- fgrep
+- [grep](https://de.wikipedia.org/wiki/Grep)
+- [wc](https://de.wikipedia.org/wiki/Unix-Kommandos)
+- [cat](https://de.wikipedia.org/wiki/Cat)
+- [wget](https://de.wikipedia.org/wiki/Wget)
+- [cut](https://de.wikipedia.org/wiki/GNU_core_utilities)
+- join
+- seq
+- printf
+- [echo](https://de.wikipedia.org/wiki/Echo_%28Informatik%29)
+- [head](https://de.wikipedia.org/wiki/Head_%28Unix%29)
+- [tails](https://de.wikipedia.org/wiki/Tail_%28Unix%29)
+- [tee](https://de.wikipedia.org/wiki/Tee_%28Unix%29)
+- iconf
+- [dbview](http://linux.die.net/man/1/dbview)
+
+#### Lernen
+
+
 ### VERSIONIERUNG
 #### [Git](http://git-scm.com/)
 Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die ursprünglich für die Quellcode-Verwaltung des Linux-Kernels entwickelt wurde.
@@ -431,6 +500,11 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 - [Overpass API](http://overpass-api.de/)
 - [Overpass Inspector](http://tools.geofabrik.de/osmi/)
 - [OpenStreetMap WMS](http://129.206.228.72/cached/hillshade?Request=GetCapabilities)
+- [Geogabrik](http://www.geofabrik.de/)
+
+## LIBRE OFFICE
+
+[Wiki](http://wiki.alpine-geckos.at/wiki/Open/Libre_Office)
 
 [1]: https://de.wikipedia.org/wiki/Html
 [2]: https://de.wikipedia.org/wiki/Javascript
@@ -452,3 +526,14 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 [18]: https://de.wikipedia.org/wiki/Gpx
 [19]: https://de.wikipedia.org/wiki/GeoTIFF
 [20]: https://de.wikipedia.org/wiki/EPSG#EPSG-Codes
+[21]: https://de.wikipedia.org/wiki/Unix-Shell
+[22]: https://de.wikipedia.org/wiki/DBASE
+[23]: https://de.wikipedia.org/wiki/Voronoi-Diagramm
+[24]: https://de.wikipedia.org/wiki/Delaunay-Triangulation
+[25]: https://de.wikipedia.org/wiki/Kriging
+[26]: https://de.wikipedia.org/wiki/Inverse_Distanzwichtung
+[27]: https://de.wikipedia.org/wiki/Semivariogramm
+[28]: https://de.wikipedia.org/wiki/N%C3%A4chste-Nachbarn-Klassifikation
+[29]: https://de.wikipedia.org/wiki/Kartogramm
+[30]: https://de.wikipedia.org/wiki/Thematische_Karte
+[31]: https://de.wikipedia.org/wiki/Topografische_Karte
