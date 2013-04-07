@@ -1,5 +1,3 @@
-![](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/.png)
-
 TODO
 Welches Koordinatensystem ist zu wählen? In welches sollten die Dateien transformiert werden?
 Layer Orthophotos Graz adden
@@ -20,11 +18,11 @@ Koordinatensystem fixiert
 Zuerst wird die Shapefile mit den Bezirksgrenzen der Stadt Graz importiert. Dazu auf das Symbol für Vektorlayer hinzufügen klicken, die passende shp-Datei auswählen und auf Öffnen klicken.
 Das selbe danach noch mit den Bezirksgrenzen des Land Steiermarkes.
 
-![Bezirke Graz](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/graz.png)
+![Bezirke Graz](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/graz.png)
 
 Danach wird der [OpenStreetMap WMS](http://129.206.228.72/cached/hillshade?Request=GetCapabilities) als eigenen Layer importiert. Dazu auf WMS Layer hinzufügen und dannach auf Neu klicken. Im folgenden Fenster wird der WMS Service eingetragen. Unter Name eine individuelle gewählte Bezeichnung, im Feld URL muss dann die Quelle des WMS eingegeben werden.
-![OpenStreetMap WMS Verbindung anlegen](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/openstreetmap-wms-1.png)
-![OpenStreetMap WMS Verbindung Layer wählen](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/openstreetmap-wms-2.png)
+![OpenStreetMap WMS Verbindung anlegen](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/openstreetmap-wms-1.png)
+![OpenStreetMap WMS Verbindung Layer wählen](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/openstreetmap-wms-2.png)
 
 Danach ist mit dem neu erstellten WMS zu verbinden und der Layer "osm_auto:all" auszuwählen.
 
@@ -35,27 +33,27 @@ Um ein paar Vektordaten im GIS zu haben und den Import von Textdateien zu zeigen
 ## Heatmap
 Mit den Apotheken POI's (Points of Interest) wird eine Heatmap erstellt (Raster -> Heatmap). Den Apotheken Layer als Layer auswählen und Speicherort swie Name der Ausgabedatei angeben (Raster). Als Radius nehmen wir 500 Meter, die restlichen Einstellung bleiben unverändert. Beim erstellten Layer die Layereigenschaften öffnen und unter Stil als Fababbildung Pseudofarben wählen und die Standardabweichung auf 7 setzen und beide Änderungen anwenden. Unter Transparenz kann dann nach belieben der Layer transparenter gemacht werden.
 
-![Apotheken Heatmap](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/heatmap.png)
+![Apotheken Heatmap](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/heatmap.png)
 
 ## Geometrische Aktionen
 
 ### Schwerpunkt 
-![Bezirke Schwerpunkt](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/schwerpunkt.png)
+![Bezirke Schwerpunkt](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/schwerpunkt.png)
 
 ### Voronoi Diagramm und Delaunay Triangulation
 Voronoi Diagramm zu den Apotheken erstellt
 delaunay  diagramm
 schwerpunkte der bezirke
-![Voronoi Diagramm und Delaunay Triangulation](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/voronoi-delaunay.png)
-![Voronoi Diagramm](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/voronoi.png)
-![Delaunay Triangulation](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/delaunay.png)
+![Voronoi Diagramm und Delaunay Triangulation](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/voronoi-delaunay.png)
+![Voronoi Diagramm](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/voronoi.png)
+![Delaunay Triangulation](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/delaunay.png)
 
 ### Konvexe Huelle und Puffer
 puffer: 200m
 
-![Konvexe Huelle 1](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/konvexe-huelle-1.png)
-![Konvexe Huelle 2](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/konvexe-huelle-2.png)
-![Puffer](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/puffer.png)
+![Konvexe Huelle 1](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/konvexe-huelle-1.png)
+![Konvexe Huelle 2](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/konvexe-huelle-2.png)
+![Puffer](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/puffer.png)
 
 ### Distanzmatrix
 nur 1e distanz 
@@ -71,9 +69,9 @@ die beiden raster files für österreich zusammenfügen => raster => sonstiges =
 danach KBS wechseln: raster => Projektionen => transformieren: Zeil KBS 31287
 Ausschneiden eines größeren Rechteckes rund um Graz
 
-![SRTM Geländemodell s/w](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/gelaendemodell-1.png)
-![SRTM Geländemodell Pseudofarben](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/gelaendemodell-2.png)
-![Raster Ausschnitt](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/raster.png)
+![SRTM Geländemodell s/w](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/gelaendemodell-1.png)
+![SRTM Geländemodell Pseudofarben](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/gelaendemodell-2.png)
+![Raster Ausschnitt](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/raster.png)
 
 ### Schummerung
 ESRI Artikel zu Z Factor http://blogs.esri.com/esri/arcgis/2007/06/12/setting-the-z-factor-parameter-correctly/
@@ -81,15 +79,15 @@ Artikel http://www.digital-geography.com/qgis-tutorial-teil-5-einfache-gelaendea
 z factor 1 da kRS in meter
 gewaessernetz steiermark importieren
 
-![Schummerung](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/schummerung-1.png)
-![Schummerung mit OpenStreetMap Overlay](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/schummerung-2.png)
-![Schummerung mit Gewässernetz Overlay](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/gewaessernetz.png)
+![Schummerung](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/schummerung-1.png)
+![Schummerung mit OpenStreetMap Overlay](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/schummerung-2.png)
+![Schummerung mit Gewässernetz Overlay](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/gewaessernetz.png)
 
 ### Neigung
 Neigung erzeugen
 http://docs.qgis.org/html/en/docs/user_manual/plugins/plugins_raster_terrain.html
 Z-Faktor 1
-![Neigung](https://github.com/skasberger/fossgis-workshop/blob/master/images/screenshots/qgis-examples/neigung.png)
+![Neigung](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/neigung.png)
 
 ## Raster to Vektor
 Übergabe von Rasterinformationen an Vektorobjekte
