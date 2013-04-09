@@ -44,9 +44,9 @@ Mit den Apotheken POI's (Points of Interest) wird eine Heatmap erstellt (Raster 
 Voronoi Diagramm zu den Apotheken erstellt
 delaunay  diagramm
 schwerpunkte der bezirke
-![Voronoi Diagramm und Delaunay Triangulation](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/voronoi-delaunay.png)
 ![Voronoi Diagramm](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/voronoi.png)
 ![Delaunay Triangulation](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/delaunay.png)
+![Voronoi Diagramm und Delaunay Triangulation](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/voronoi-delaunay.png)
 
 ### Konvexe Huelle und Puffer
 puffer: 200m
@@ -69,9 +69,9 @@ die beiden raster files für österreich zusammenfügen => raster => sonstiges =
 danach KBS wechseln: raster => Projektionen => transformieren: Zeil KBS 31287
 Ausschneiden eines größeren Rechteckes rund um Graz
 
+![Raster Ausschnitt](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/raster.png)
 ![SRTM Geländemodell s/w](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/gelaendemodell-1.png)
 ![SRTM Geländemodell Pseudofarben](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/gelaendemodell-2.png)
-![Raster Ausschnitt](http://openscience.alpine-geckos.at/project/fossgis-workshop/images/qgis-examples/raster.png)
 
 ### Schummerung
 ESRI Artikel zu Z Factor http://blogs.esri.com/esri/arcgis/2007/06/12/setting-the-z-factor-parameter-correctly/

@@ -1,35 +1,9 @@
-# Einleitende Informationen zu FOSSGIS
-Hier werden kollaborativ Informationen für BeginnerInnen rund um Free and Open Source Geoinformatic Software gesammelt und aufbereitet. JedeR ist herzlich dazu aufgerufen, sein/ihr Know How zu teilen.
+# DOKUMENTATION FOSSGIS
+Hier werden grundlegende Informationen rund um Freie Software, Freie Daten, Geoinforamtik und räumlich-statistische Analysen gesammelt. Dabei geht es nicht um konkrete Umsetzungen sondern um allgemeine Bereiche wie Theorien, Methoden oder Sammeln von Quellen.
 
-Es wird der gesamte Arbeitsprozess von 
+## GEOINFORMATIK
 
-- der Erzeugung von Daten
-- deren Verwaltung (Datenbanken, Dateiformate, etc)
-- Analyse in einem GIS System, mit Programmiersprachen
-- Präsentation im Web und im GIS
-
-## ALLGEMEIN
-
-### [OGC](http://www.opengeospatial.org/)
-
-### [OSGeo](http://www.osgeo.org/)
-
-### Vektordaten
-
-### Rasterdaten
-
-### WMS
-Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus Landkarten über das World Wide Web. Der WMS ist ein Spezialfall eines Web Services.[12]
-
-### WFS
-Unter einem WFS (Web Feature Service) versteht man den internetgestützten Zugriff auf Geodaten innerhalb eines verteilten GIS. Der WFS beschränkt sich dabei ausschließlich auf Vektordaten, wie sie in Datenbanken abgelegt werden können. Er legt fest, in welcher Weise ein Client mit einem Geodienst bei der Ausführung einer geographischen Analyse interagiert. Er erhält dadurch Zugriff auf vordefinierte Rechenvorschriften oder -modelle, die samt den benötigten Geodaten auf einem Server liegen. [16]
-
-### WMTS
-Der Standard Web Map Tile Service (WMTS) ist ein Geodienst, spezifiziert durch das Open Geospatial Consortium (OGC) und definiert einen Webservice, um digitale Karten kachelbasiert anbieten und abrufen zu können. [13]
-
-### WPS
-Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine räumliche Analyse von Geodaten durchzuführen. [17]
-
+### Grundlagen
 ### Koordinatenreferenzsysteme
 - [Geodätisches Datum](https://de.wikipedia.org/wiki/Geod%C3%A4tisches_Datum)
 - [Koordinatenreferenzsystem](https://de.wikipedia.org/wiki/Koordinatenreferenzsystem)
@@ -42,14 +16,36 @@ Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine
 	- [Spatial References](http://www.spatialreference.org/)
 	- [EPSG Codes für Österreich](http://www.esri-austria.at/downloads/coords_at.html)
 
+#### Vektordaten
+
+#### Rasterdaten
+
+#### WMS
+Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus Landkarten über das World Wide Web. Der WMS ist ein Spezialfall eines Web Services.[12]
+
+#### WFS
+Unter einem WFS (Web Feature Service) versteht man den internetgestützten Zugriff auf Geodaten innerhalb eines verteilten GIS. Der WFS beschränkt sich dabei ausschließlich auf Vektordaten, wie sie in Datenbanken abgelegt werden können. Er legt fest, in welcher Weise ein Client mit einem Geodienst bei der Ausführung einer geographischen Analyse interagiert. Er erhält dadurch Zugriff auf vordefinierte Rechenvorschriften oder -modelle, die samt den benötigten Geodaten auf einem Server liegen. [16]
+
+#### WCS
+Der Web Coverage Service (WCS) ist ein Standard des Open Geospatial Consortiums (OGC) für Geodienste. Der Web Coverage Service 1.0.0 normiert den Zugriff auf große, multidimensionale Rasterarchive.[1][2] Prinzipiell ist der Begriff "Coverage" weiter gefasst, jedoch fokussiert WCS derzeit auf Rasterdaten (siehe hierzu auch ISO 19123). Seit dem 2. September 2010 ist WCS 2.0 offizieller OGC-Standard. [33]
+#### WMTS
+Der Standard Web Map Tile Service (WMTS) ist ein Geodienst, spezifiziert durch das Open Geospatial Consortium (OGC) und definiert einen Webservice, um digitale Karten kachelbasiert anbieten und abrufen zu können. [13]
+
+#### WPS
+Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine räumliche Analyse von Geodaten durchzuführen. [17]
+
+### Organisationen
+#### [OGC](http://www.opengeospatial.org/)
+
+#### [OSGeo](http://www.osgeo.org/)
+
 ### Lernen
 
 - [GIS Grundlagen mit Quantum GIS](http://cms.uni-kassel.de/asl/fileadmin/daten/Einrichtungen/Geo-Info/konferenz/Folien/QGIS_Basisfunktionen_zum_Workshop_onlinedaten.pdf)
 
+### DATEIFORMATE
 
-## DATEIFORMATE
-
-### Shapefiles
+#### Shapefiles
 Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein von ESRI ursprünglich für ArcView entwickeltes Format für Geodaten. Es hat sich mittlerweile zu einer Art Quasi-Standard im Desktop-GIS-Umfeld verbreitet, da es ein recht einfaches und bezüglich der Datenqualität nur wenig anspruchsvolles Format darstellt.
 
 Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
@@ -67,60 +63,46 @@ In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.
 
 [ESRI Shapefile Technical Description](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 
-### KML
+#### KML
 Keyhole Markup Language (KML) ist eine Auszeichnungssprache zur Beschreibung von Geodaten für die Client-Komponenten der Programme Google Earth und Google Maps. KML befolgt die XML-Syntax, liegt in der Version 2.2 vor und ist ein Standard des Open Geospatial Consortium. [15]
 
 ### GPX
 D as GPS Exchange Format (GPX) ist ein Datenformat zur Speicherung von Geodaten (GPS-Daten), das von der Firma TopoGrafix entwickelt wurde. Es basiert auf dem allgemeinen XML-Standard. Das GPS Exchange Format ist ein offenes, lizenzfreies Format, das von jedem gebührenfrei verwendet werden darf. Es soll den Austausch von Geodaten zwischen verschiedenen Programmen erleichtern. 	[18]
 
-### GeoTIFF
+#### GeoTIFF
 Ein GeoTIFF ist eine spezielle Form eines TIFF-Bildes, also ein Dateiformat zur Speicherung von Bilddaten (Dateinamenserweiterung .geotiff, oft auch nur .tif). Da das TIF-Format eine verlustfreie Speicherung zulässt, eignet es sich gut zur Verarbeitung von geographischen Daten, da es bei Satelliten- und Luftbildern bzw. anderen Rasterdaten oft auf hohe Abbildungsgenauigkeit ankommt. [19]
 [Spezifikation](http://www.remotesensing.org/geotiff/spec/geotiffhome.html)
 
-### GeoJPEG
+#### GeoJPEG
 
-### CSV
+#### CSV
 
-### [dBase](https://en.wikipedia.org/wiki/DBase)
+#### [dBase](https://en.wikipedia.org/wiki/DBase)
 dBASE war die erste weithin genutzte dateibasierende Datenbank-Applikation, genauer ein Datenbankmanagementsystem (DBMS) für Mikrocomputer, das von dem Unternehmen Ashton-Tate ursprünglich für das Betriebssystem CP/M entwickelt und vertrieben wurde. Später wurde die Datenbank-Applikation auf den IBM-PC unter DOS portiert. Die Grundidee des dBASE-Systems ist, die Tabellen einer Datenbank in speziell strukturierten Dateien (DataBaseFiles = DBF) zu halten und zur Verarbeitung eine 4GL-Sprache bereitzustellen. [22]
 
-## Analyse & Präsentation
+## Geo-Server
 
-### Voronoi Diagramm
-Als Voronoi-Diagramm, auch Thiessen-Polygonen oder Dirichlet-Zerlegung, wird eine Zerlegung des Raumes in Regionen bezeichnet, die durch eine vorgegebene Menge an Punkten des Raumes, hier als Zentren bezeichnet, bestimmt werden. Jede Region wird durch genau ein Zentrum bestimmt und umfasst alle Punkte des Raumes, die in Bezug zur euklidischen Metrik näher an dem Zentrum der Region liegen, als an jedem anderen Zentrum. Derartige Regionen werden auch als Voronoi-Regionen bezeichnet. Aus allen Punkten, die mehr als ein nächstgelegenes Zentrum besitzen und somit die Grenzen der Regionen bilden, entsteht das Voronoi-Diagramm. [23]
+### [Mapserver](http://mapserver.org/)
+MapServer ist ein freies Mapserver-Projekt der Open Source Geospatial Foundation (OSGeo), als ehemaliges Projekt der University of Minnesota (UMN) auch bekannt unter dem Namen UMN Mapserver oder UMN MapServer. [34]
 
-![Voronoi Diagramm](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Voronoi_diagram.svg/310px-Voronoi_diagram.svg.png)
+### [Geoserver](http://geoserver.org/display/GEOS/Welcome)
+GeoServer ist eine Mapserver-Software. Sie zeichnet sich aus durch Konformität zu Standards des Open Geospatial Consortiums (OGC) und implementiert die Dienste Web Map Service (WMS), Web Coverage Service (WCS), Web Feature Service (WFS, auch transaktional) und Web Processing Service (WPS). [32]
 
-### Delaunay Triangulation
-Die Delaunay-Triangulation ist ein gebräuchliches Verfahren, um aus einer Punktemenge ein Dreiecksnetz zu erstellen. Mit dem Verfahren der Delaunay-Triangulation werden Punkte im \mathbb{R}^2 so zu Dreiecken vernetzt, dass innerhalb des Kreises, auf dem die drei Dreieckspunkte liegen, keine anderen Punkte enthalten sind. Man verwendet das Verfahren zum Beispiel zur Optimierung von Berechnungsnetzen für die Finite-Elemente-Methode [24]
+## DATENBANKEN
+### [postgreSQL](http://www.postgresql.org/)
+PostgreSQL ist ein freies, objektrelationales Datenbankmanagementsystem (ORDBMS). PostgreSQL ist weitgehend konform mit dem SQL-Standard ANSI-SQL 2008[4], d. h. der Großteil der Funktionen ist verfügbar und verhält sich wie definiert. [11]
+- [Doc](http://www.postgresql.org/docs/)
+- [Download](http://www.postgresql.org/download/)
 
-### Inverse Distanzgewichtung
-Die Inverse Distanzwichtung ist ein nichtstatistisches Interpolationsverfahren der Geostatistik und wird zur einfachen Interpolation der räumlichen Abhängigkeit georeferenzierter Daten genutzt. Dabei gilt als Grundannahme, dass die Ähnlichkeit eines unbekannten Wertes zum bekannten Messwert mit der Entfernung von diesem abnimmt, die Daten also umso unähnlicher sind, je weiter sie auseinander liegen. Dieser Zusammenhang wird bei der inversen Distanzwichtung dadurch zum Ausdruck gebracht, dass der Messwert mit einem Gewicht multipliziert wird, das proportional zum Inversen des Abstands zwischen Schätzpunkt und Messort ist. [26]
 
-### Kriging
-Unter Kriging (oder auch: Krigen) versteht man ein geostatistisches Verfahren, mit dem man Werte an Orten, für die keine Stichprobe vorliegt durch umliegende Messwerte interpolieren oder auch annähern kann.Der wesentliche Vorteil gegenüber einfacheren Methoden wie beispielsweise der Inversen Distanzgewichtung ist die Berücksichtigung der räumlichen Varianz, die sich mit Hilfe der Semivariogramme ermitteln lässt. Für einen gesuchten Wert werden dabei die Gewichte der in die Berechnung einfließenden Messwerte so bestimmt, dass die Schätzfehlervarianz möglichst gering ist. Der Fehler hängt dabei von der Qualität des Variogramms bzw. der Variogrammfunktion ab. [25]
+### [postGIS](http://postgis.net/)
+PostGIS ist eine Erweiterung für die objektrelationale Datenbank PostgreSQL, die geografische Objekte und Funktionen umfasst. PostgreSQL mit PostGIS bildet eine Geodatenbank, die in Geoinformationssysteme eingebunden werden kann.[10]
 
-### Semivariogramm
-Ein Semivariogramm (kurz: Variogramm) stellt die räumliche Beziehung eines Punktes (regionalisierte Variable) zu Nachbarpunkten dar. Dazu werden in verschiedenen Entfernungsstufen ("lag") Punktpaare gebildet. Die quadrierten Differenzen der Paare werden dann aufsummiert und durch die Menge der Punkte geteilt (siehe auch Varianz). Es ergibt sich die Semivarianz, die in einem zweidimensionalen Diagramm als Funktion der Entfernung zum Bezugspunkt dargestellt wird.
+- [Doc](http://postgis.net/documentation)
+- [Download](http://postgis.net/install)
 
-Im Idealfall ergeben sich Grundformen, die durch mathematische Funktionen beschrieben werden können (theoretische Variogramme): - spherische Variogramme, - exponentielle Variogramme, - lineare Variogramme und - gausssche Variogramme. Semiovarigramme finden Anwendung beim Kriging[27]
 
-### Nächste-Nachbarn-Klassifikation
-Die Nächste-Nachbarn-Klassifikation ist eine parameterfreie Methode zur Schätzung von Wahrscheinlichkeitsdichtefunktionen. Der daraus resultierende k-Nearest-Neighbor-Algorithmus (KNN, zu deutsch „k-nächste-Nachbarn-Algorithmus“) ist ein Klassifikationsverfahren, bei dem eine Klassenzuordnung unter Berücksichtigung seiner k nächsten Nachbarn vorgenommen wird. Der Teil des Lernens besteht aus simplem Abspeichern der Trainingsbeispiele, was auch als lazy learning („träges Lernen“) bezeichnet wird. [28]
-
-### Topografische Karte
-Die topografische Karte (auch topographische Karte oder Landkarte) ist eine mittel- bis großmaßstäbige Karte, die zur genauen Abbildung der Geländeformen (Topografie) und anderer sichtbarer Details der Erdoberfläche dient. Das Gelände wird meist durch Höhenlinien dargestellt, ergänzt um markante Höhenpunkte (Gipfel, Sättel usw.) und den Verlauf der Gewässer.
-
-Zum Inhalt solcher Karten gehören auch Straßen, Bahnlinien, größere Gebäude, die Umrisse von Ortschaften und andere technische Sachverhalte wie Grenzen, Wasser- oder Stromleitungen. Alle diese geografischen Objekte werden entsprechend dem Maßstab lagerichtig und vollständig durch ein System kartografischer Zeichen wiedergegeben. [31]
-
-### Thematische Karten
-Thematische Karten oder angewandte Karten sind Karten, die ein bestimmtes Merkmal oder Thema verbildlichen, beispielsweise Pflanzenverbreitung oder Bevölkerungsdichte. Auch Zusammenhänge thematischer Ebenen lassen sich darstellen, z. B. zwischen Merkmalen und ihrer zeitlichen Änderung. Im Gegensatz zu topografischen Karten (Landkarten), die vor allem der Orientierung im Gelände und der Ausmessung von Standorten bzw. geometrischen Details dienen, werden in thematischen Karten Objekte „zur Kenntnis ihrer selbst“ dargestellt. Neben dem Sachbezug, sind der Zeitbezug (Stichtag oder Zeitraum) und der Raumbezug die wesentlichen Eigenschaften einer thematischen Karte: der dargestellte Sachverhalt gilt für einen bestimmten Zeitpunkt oder Zeitraum und für einen bestimmten Ort oder statistische Raumbezugseinheit. [30]
-
-#### Kartogramm
-Kartogramme sind thematische Karten, in denen quantitative Aussagen auf festgelegten Bezugsflächen dargestellt werden. Die jeweilige Angabe gilt für die gesamte Fläche, ohne interne Variationen zu beachten. Häufig werden statistische Angaben, die auf einer Ebene der Verwaltungsgliederung erhoben wurden, als Kartogramm dargestellt. [29]
-
-- [Choroplethenkarte](https://de.wikipedia.org/wiki/Choroplethenkarte)
-
+### [GeoAlchemy](https://geoalchemy-2.readthedocs.org/en/0.1/)
 
 ## GEOINFORMATIONSSYSTEME
 ### [QUANTUM GIS](http://www.qgis.org/)
@@ -130,18 +112,6 @@ Mittels unterschiedlicher Erweiterungen kann die Funktionalität stark ausgebaut
 - [Doc](http://www.qgis.org/en/documentation.html)
 - [API Doc](http://www.qgis.org/api/)
 - [Download](http://hub.qgis.org/projects/quantum-gis/wiki/DownloadDe)
-
-
-#### Lernen
-
-- [Harvard Workshop Videos](https://www.youtube.com/playlist?list=PL0AAB19E208B14E96)
-- [Jarrett Totton Workshop Videos](https://www.youtube.com/playlist?list=PLDEFCFD4D118823AA&feature=mh_lolz)
-- [Q GIS GRASS Cookbook](http://grasswiki.osgeo.org/wiki/QGIS_GRASS_Cookbook)
-- [Introduction GIS worksheets](http://linfiniti.com/dla/)
-- [Baruch](http://www.baruch.cuny.edu/geoportal/practicum/)
-- [Tutorials @ SpatialThoughts](http://qgis.spatialthoughts.com/)
-- [Ubuntu Packetquellen](http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu)
-- [PyQGIS Developer Cookbook](http://qgis.org/pyqgis-cookbook/)
 
 
 #### Erweiterungen
@@ -175,6 +145,16 @@ Mittels unterschiedlicher Erweiterungen kann die Funktionalität stark ausgebaut
 - Centroids Maker
 - Map Coloring
 
+#### Lernen
+
+- [Harvard Workshop Videos](https://www.youtube.com/playlist?list=PL0AAB19E208B14E96)
+- [Jarrett Totton Workshop Videos](https://www.youtube.com/playlist?list=PLDEFCFD4D118823AA&feature=mh_lolz)
+- [Q GIS GRASS Cookbook](http://grasswiki.osgeo.org/wiki/QGIS_GRASS_Cookbook)
+- [Introduction GIS worksheets](http://linfiniti.com/dla/)
+- [Baruch](http://www.baruch.cuny.edu/geoportal/practicum/)
+- [Tutorials @ SpatialThoughts](http://qgis.spatialthoughts.com/)
+- [Ubuntu Packetquellen](http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu)
+- [PyQGIS Developer Cookbook](http://qgis.org/pyqgis-cookbook/)
 
 ## WEB
 
@@ -320,22 +300,6 @@ GeoExt verbindet die räumlichen Funktionen von OpenLayers mit der Bedienoberfl�
 
 - [Codeacademy](http://www.codecademy.com/de/tracks/apis)
 
-
-## DATENBANKEN
-### [postgreSQL](http://www.postgresql.org/)
-PostgreSQL ist ein freies, objektrelationales Datenbankmanagementsystem (ORDBMS). PostgreSQL ist weitgehend konform mit dem SQL-Standard ANSI-SQL 2008[4], d. h. der Großteil der Funktionen ist verfügbar und verhält sich wie definiert. [11]
-- [Doc](http://www.postgresql.org/docs/)
-- [Download](http://www.postgresql.org/download/)
-
-
-### [postGIS](http://postgis.net/)
-PostGIS ist eine Erweiterung für die objektrelationale Datenbank PostgreSQL, die geografische Objekte und Funktionen umfasst. PostgreSQL mit PostGIS bildet eine Geodatenbank, die in Geoinformationssysteme eingebunden werden kann.[10]
-
-- [Doc](http://postgis.net/documentation)
-- [Download](http://postgis.net/install)
-
-
-### [GeoAlchemy](https://geoalchemy-2.readthedocs.org/en/0.1/)
 
 ## PROGRAMMIEREN
 ### ALLGEMEIN
@@ -506,6 +470,44 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 
 [Wiki](http://wiki.alpine-geckos.at/wiki/Open/Libre_Office)
 
+## Analyse & Präsentation
+
+### Voronoi Diagramm
+Als Voronoi-Diagramm, auch Thiessen-Polygonen oder Dirichlet-Zerlegung, wird eine Zerlegung des Raumes in Regionen bezeichnet, die durch eine vorgegebene Menge an Punkten des Raumes, hier als Zentren bezeichnet, bestimmt werden. Jede Region wird durch genau ein Zentrum bestimmt und umfasst alle Punkte des Raumes, die in Bezug zur euklidischen Metrik näher an dem Zentrum der Region liegen, als an jedem anderen Zentrum. Derartige Regionen werden auch als Voronoi-Regionen bezeichnet. Aus allen Punkten, die mehr als ein nächstgelegenes Zentrum besitzen und somit die Grenzen der Regionen bilden, entsteht das Voronoi-Diagramm. [23]
+
+![Voronoi Diagramm](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Voronoi_diagram.svg/310px-Voronoi_diagram.svg.png)
+
+### Delaunay Triangulation
+Die Delaunay-Triangulation ist ein gebräuchliches Verfahren, um aus einer Punktemenge ein Dreiecksnetz zu erstellen. Mit dem Verfahren der Delaunay-Triangulation werden Punkte im \mathbb{R}^2 so zu Dreiecken vernetzt, dass innerhalb des Kreises, auf dem die drei Dreieckspunkte liegen, keine anderen Punkte enthalten sind. Man verwendet das Verfahren zum Beispiel zur Optimierung von Berechnungsnetzen für die Finite-Elemente-Methode [24]
+
+### Inverse Distanzgewichtung
+Die Inverse Distanzwichtung ist ein nichtstatistisches Interpolationsverfahren der Geostatistik und wird zur einfachen Interpolation der räumlichen Abhängigkeit georeferenzierter Daten genutzt. Dabei gilt als Grundannahme, dass die Ähnlichkeit eines unbekannten Wertes zum bekannten Messwert mit der Entfernung von diesem abnimmt, die Daten also umso unähnlicher sind, je weiter sie auseinander liegen. Dieser Zusammenhang wird bei der inversen Distanzwichtung dadurch zum Ausdruck gebracht, dass der Messwert mit einem Gewicht multipliziert wird, das proportional zum Inversen des Abstands zwischen Schätzpunkt und Messort ist. [26]
+
+### Kriging
+Unter Kriging (oder auch: Krigen) versteht man ein geostatistisches Verfahren, mit dem man Werte an Orten, für die keine Stichprobe vorliegt durch umliegende Messwerte interpolieren oder auch annähern kann.Der wesentliche Vorteil gegenüber einfacheren Methoden wie beispielsweise der Inversen Distanzgewichtung ist die Berücksichtigung der räumlichen Varianz, die sich mit Hilfe der Semivariogramme ermitteln lässt. Für einen gesuchten Wert werden dabei die Gewichte der in die Berechnung einfließenden Messwerte so bestimmt, dass die Schätzfehlervarianz möglichst gering ist. Der Fehler hängt dabei von der Qualität des Variogramms bzw. der Variogrammfunktion ab. [25]
+
+### Semivariogramm
+Ein Semivariogramm (kurz: Variogramm) stellt die räumliche Beziehung eines Punktes (regionalisierte Variable) zu Nachbarpunkten dar. Dazu werden in verschiedenen Entfernungsstufen ("lag") Punktpaare gebildet. Die quadrierten Differenzen der Paare werden dann aufsummiert und durch die Menge der Punkte geteilt (siehe auch Varianz). Es ergibt sich die Semivarianz, die in einem zweidimensionalen Diagramm als Funktion der Entfernung zum Bezugspunkt dargestellt wird.
+
+Im Idealfall ergeben sich Grundformen, die durch mathematische Funktionen beschrieben werden können (theoretische Variogramme): - spherische Variogramme, - exponentielle Variogramme, - lineare Variogramme und - gausssche Variogramme. Semiovarigramme finden Anwendung beim Kriging[27]
+
+### Nächste-Nachbarn-Klassifikation
+Die Nächste-Nachbarn-Klassifikation ist eine parameterfreie Methode zur Schätzung von Wahrscheinlichkeitsdichtefunktionen. Der daraus resultierende k-Nearest-Neighbor-Algorithmus (KNN, zu deutsch „k-nächste-Nachbarn-Algorithmus“) ist ein Klassifikationsverfahren, bei dem eine Klassenzuordnung unter Berücksichtigung seiner k nächsten Nachbarn vorgenommen wird. Der Teil des Lernens besteht aus simplem Abspeichern der Trainingsbeispiele, was auch als lazy learning („träges Lernen“) bezeichnet wird. [28]
+
+### Topografische Karte
+Die topografische Karte (auch topographische Karte oder Landkarte) ist eine mittel- bis großmaßstäbige Karte, die zur genauen Abbildung der Geländeformen (Topografie) und anderer sichtbarer Details der Erdoberfläche dient. Das Gelände wird meist durch Höhenlinien dargestellt, ergänzt um markante Höhenpunkte (Gipfel, Sättel usw.) und den Verlauf der Gewässer.
+
+Zum Inhalt solcher Karten gehören auch Straßen, Bahnlinien, größere Gebäude, die Umrisse von Ortschaften und andere technische Sachverhalte wie Grenzen, Wasser- oder Stromleitungen. Alle diese geografischen Objekte werden entsprechend dem Maßstab lagerichtig und vollständig durch ein System kartografischer Zeichen wiedergegeben. [31]
+
+### Thematische Karten
+Thematische Karten oder angewandte Karten sind Karten, die ein bestimmtes Merkmal oder Thema verbildlichen, beispielsweise Pflanzenverbreitung oder Bevölkerungsdichte. Auch Zusammenhänge thematischer Ebenen lassen sich darstellen, z. B. zwischen Merkmalen und ihrer zeitlichen Änderung. Im Gegensatz zu topografischen Karten (Landkarten), die vor allem der Orientierung im Gelände und der Ausmessung von Standorten bzw. geometrischen Details dienen, werden in thematischen Karten Objekte „zur Kenntnis ihrer selbst“ dargestellt. Neben dem Sachbezug, sind der Zeitbezug (Stichtag oder Zeitraum) und der Raumbezug die wesentlichen Eigenschaften einer thematischen Karte: der dargestellte Sachverhalt gilt für einen bestimmten Zeitpunkt oder Zeitraum und für einen bestimmten Ort oder statistische Raumbezugseinheit. [30]
+
+#### Kartogramm
+Kartogramme sind thematische Karten, in denen quantitative Aussagen auf festgelegten Bezugsflächen dargestellt werden. Die jeweilige Angabe gilt für die gesamte Fläche, ohne interne Variationen zu beachten. Häufig werden statistische Angaben, die auf einer Ebene der Verwaltungsgliederung erhoben wurden, als Kartogramm dargestellt. [29]
+
+- [Choroplethenkarte](https://de.wikipedia.org/wiki/Choroplethenkarte)
+
+
 [1]: https://de.wikipedia.org/wiki/Html
 [2]: https://de.wikipedia.org/wiki/Javascript
 [3]: https://de.wikipedia.org/wiki/Cascading_Style_Sheets
@@ -537,3 +539,6 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 [29]: https://de.wikipedia.org/wiki/Kartogramm
 [30]: https://de.wikipedia.org/wiki/Thematische_Karte
 [31]: https://de.wikipedia.org/wiki/Topografische_Karte
+[32]: https://de.wikipedia.org/wiki/GeoServer
+[33]: https://de.wikipedia.org/wiki/Web_Coverage_Service
+[34]: https://de.wikipedia.org/wiki/MapServer
