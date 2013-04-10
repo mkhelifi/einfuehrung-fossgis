@@ -1,10 +1,21 @@
-# DOKUMENTATION FOSSGIS
+ # DOKUMENTATION FOSSGIS
 Hier werden grundlegende Informationen rund um Freie Software, Freie Daten, Geoinforamtik und räumlich-statistische Analysen gesammelt. Dabei geht es nicht um konkrete Umsetzungen sondern um allgemeine Bereiche wie Theorien, Methoden oder Sammeln von Quellen.
 
 ## GEOINFORMATIK
 
 ### Grundlagen
-### Koordinatenreferenzsysteme
+#### Vektordaten
+
+#### Rasterdaten
+
+#### GPS
+Global Positioning System (GPS), offiziell NAVSTAR GPS, ist ein globales Navigationssatellitensystem zur Positionsbestimmung und Zeitmessung. Es wurde seit den 1970er-Jahren vom US-Verteidigungsministerium entwickelt und löste ab etwa 1985 das alte Satellitennavigationssystem NNSS (Transit) der US-Marine ab, ebenso die Vela-Satelliten zur Ortung von Kernwaffenexplosionen. GPS ist seit Mitte der 1990er-Jahre voll funktionsfähig und stellt seit der Abschaltung der künstlichen Signalverschlechterung (Selective Availability) am 2. Mai 2000 auch für zivile Zwecke eine Ortungsgenauigkeit in der Größenordnung von oft besser als 10 Meter sicher. Die Genauigkeit lässt sich durch Differenzmethoden (Differential-GPS / DGPS) in der Umgebung eines Referenzempfängers auf Werte im Zentimeterbereich oder besser steigern. Mit den satellitengestützten Verbesserungssystemen (SBAS), die Korrekturdaten über geostationäre, in den Polargebieten nicht zu empfangende Satelliten verbreiten und ebenfalls zur Klasse der DGPS Systeme gehören, werden kontinentweit Genauigkeiten von einem Meter erreicht. GPS hat sich als das weltweit wichtigste Ortungsverfahren etabliert und wird in Navigationssystemen weitverbreitet genutzt. [36]
+
+#### Glossar
+- [Neogeographie](https://de.wikipedia.org/wiki/Neogeographie): Neogeographie („neue Geografie“) bezeichnet häufig die Nutzung von geografischen Techniken und Werkzeugen zu persönlichen oder gemeinschaftlichen Zwecken durch Nutzergruppen, die keine Experten sind. Der Anwendungsbereich ist dabei häufig weniger formal oder analytisch.
+- [Location Based Services](https://de.wikipedia.org/wiki/Location_Based_Services): Standortbezogene Dienste (engl. Location-based Services (LBS), auch: Location Dependent Services (LDS)) sind mobile Dienste, die unter Zuhilfenahme von positionsabhängigen Daten dem Endbenutzer selektive Informationen bereitstellen oder Dienste anderer Art erbringen.
+
+#### Koordinatenreferenzsysteme
 - [Geodätisches Datum](https://de.wikipedia.org/wiki/Geod%C3%A4tisches_Datum)
 - [Koordinatenreferenzsystem](https://de.wikipedia.org/wiki/Koordinatenreferenzsystem)
 - [Azimut](https://de.wikipedia.org/wiki/Azimut)
@@ -16,10 +27,16 @@ Hier werden grundlegende Informationen rund um Freie Software, Freie Daten, Geoi
 	- [Spatial References](http://www.spatialreference.org/)
 	- [EPSG Codes für Österreich](http://www.esri-austria.at/downloads/coords_at.html)
 
-#### Vektordaten
+### Organisationen
+#### [OGC](http://www.opengeospatial.org/)
+Das Open Geospatial Consortium (OGC) ist eine 1994 als Open GIS Consortium gegründete gemeinnützige Organisation, die sich zum Ziel gesetzt hat, die Entwicklung von raumbezogener Informationsverarbeitung (insbesondere Geodaten) auf Basis allgemeingültiger Standards zum Zweck der Interoperabilität festzulegen. Dabei baut sich das OGC aus Mitgliedern von Regierungsorganisationen, privater Industrie und Universitäten auf, deren Mitgliedschaft im OGC kostenpflichtig ist. Das OGC seinerseits ist seit Januar 2007 Mitglied des World Wide Web Consortiums (W3C). Die registrierte Marke heißt OpenGIS. [37]
 
-#### Rasterdaten
+#### [OSGeo](http://www.osgeo.org/)
 
+#### Internationale Kartographische Vereinigung
+Die Internationale Kartographische Vereinigung (IKV) (englisch International Cartographic Association (ICA), französisch Association Cartographique Internationale (ACI)) ist der weltweite Dachverband kartografischer Gesellschaften und anderer Einrichtungen. Ihr Ziel ist es, die Weiterentwicklung der Kartografie weltweit zu koordinieren. [41]
+
+### OGC Standards
 #### WMS
 Ein Web Map Service (WMS) ist eine Schnittstelle zum Abrufen von Auszügen aus Landkarten über das World Wide Web. Der WMS ist ein Spezialfall eines Web Services.[12]
 
@@ -28,16 +45,12 @@ Unter einem WFS (Web Feature Service) versteht man den internetgestützten Zugri
 
 #### WCS
 Der Web Coverage Service (WCS) ist ein Standard des Open Geospatial Consortiums (OGC) für Geodienste. Der Web Coverage Service 1.0.0 normiert den Zugriff auf große, multidimensionale Rasterarchive.[1][2] Prinzipiell ist der Begriff "Coverage" weiter gefasst, jedoch fokussiert WCS derzeit auf Rasterdaten (siehe hierzu auch ISO 19123). Seit dem 2. September 2010 ist WCS 2.0 offizieller OGC-Standard. [33]
+
 #### WMTS
 Der Standard Web Map Tile Service (WMTS) ist ein Geodienst, spezifiziert durch das Open Geospatial Consortium (OGC) und definiert einen Webservice, um digitale Karten kachelbasiert anbieten und abrufen zu können. [13]
 
 #### WPS
 Ein Web Processing Service (WPS) ist ein Mechanismus, um über das Internet eine räumliche Analyse von Geodaten durchzuführen. [17]
-
-### Organisationen
-#### [OGC](http://www.opengeospatial.org/)
-
-#### [OSGeo](http://www.osgeo.org/)
 
 ### Lernen
 
@@ -77,8 +90,37 @@ Ein GeoTIFF ist eine spezielle Form eines TIFF-Bildes, also ein Dateiformat zur 
 
 #### CSV
 
+#### XML
+Die Extensible Markup Language (engl. für „erweiterbare Auszeichnungssprache“), abgekürzt XML, ist eine Auszeichnungssprache zur Darstellung hierarchisch strukturierter Daten in Form von Textdateien. XML wird u. a. für den plattform- und implementationsunabhängigen Austausch von Daten zwischen Computersystemen eingesetzt, insbesondere über das Internet.
+
+Die vom World Wide Web Consortium (W3C) herausgegebene XML-Spezifikation (Recommendation, erste Ausgabe vom 10. Februar 1998, aktuell ist die fünfte Ausgabe vom 26. November 2008) definiert eine Metasprache, auf deren Basis durch strukturelle und inhaltliche Einschränkungen anwendungsspezifische Sprachen definiert werden. Diese Einschränkungen werden durch Schemasprachen wie DTD oder XML Schema ausgedrückt. Beispiele für XML-Sprachen sind: RSS, MathML, GraphML, XHTML, XAML, Scalable Vector Graphics (SVG), GPX, aber auch XML-Schema.
+
+Ein XML-Dokument besteht aus Textzeichen, im einfachsten Fall in ASCII-Kodierung, und ist damit menschenlesbar. Binärdaten enthält es per Definition nicht. [39]
+
+#### GML
+Geography Markup Language, kurz GML, ist eine Auszeichnungssprache zum Austausch raumbezogener Objekte ("Features"). GML ist eine Anwendung von XML und durch Schemabeschreibungen (XML-Schemadateien *.xsd) festgelegt. GML erlaubt die Übermittlung von Objekten mit Attributen, Relationen und Geometrien im Bereich der Geodaten unter Einbeziehung von nicht-konventionellen Daten, wie Sensordaten. [38]
+
+#### GeoRSS
+GeoRSS ist ein noch recht junger Standard, um mittels Web-Feeds eine Georeferenzierung zu übertragen.
+
+GeoRSS kann dabei durch Erweiterung von RSS 1.0, RSS 2.0 oder Atom benutzt werden.
+
+Basierend auf RSS, gibt es folgende Standards:
+
+- GeoRSS-Simple
+- GeoRSS-GML
+
+GeoRSS-Simple ist ein leichtgewichtiges Format, dass nur Basisgeometrien (point, line, box, polygon) unterstützt und die typischen Anwendungsfälle für georeferenzierte Daten abdeckt.
+
+GeoRSS-GML geht auf das GML-Format des Open Geospatial Consortiums (OGC) zurück und unterstützt eine breitere Palette von Geometrieobjekten als GeoRSS-Simple, insbesondere andere Koordinatensysteme als WGS84. [40]
+
 #### [dBase](https://en.wikipedia.org/wiki/DBase)
 dBASE war die erste weithin genutzte dateibasierende Datenbank-Applikation, genauer ein Datenbankmanagementsystem (DBMS) für Mikrocomputer, das von dem Unternehmen Ashton-Tate ursprünglich für das Betriebssystem CP/M entwickelt und vertrieben wurde. Später wurde die Datenbank-Applikation auf den IBM-PC unter DOS portiert. Die Grundidee des dBASE-Systems ist, die Tabellen einer Datenbank in speziell strukturierten Dateien (DataBaseFiles = DBF) zu halten und zur Verarbeitung eine 4GL-Sprache bereitzustellen. [22]
+
+#### JSON
+Die JavaScript Object Notation, kurz JSON, ist ein kompaktes Datenformat in für Mensch und Maschine einfach lesbarer Textform zum Zweck des Datenaustauschs zwischen Anwendungen. Jedes gültige JSON-Dokument soll ein gültiges JavaScript sein und per eval() interpretiert werden können. Davon abgesehen ist JSON aber unabhängig von der Programmiersprache. Parser existieren in praktisch allen verbreiteten Sprachen. [35]
+
+#### GeoJSON
 
 ## Geo-Server
 
@@ -507,6 +549,14 @@ Kartogramme sind thematische Karten, in denen quantitative Aussagen auf festgele
 
 - [Choroplethenkarte](https://de.wikipedia.org/wiki/Choroplethenkarte)
 
+## Quellen
+Viele Texte hier stammen aus der deutschen Wikipedia und stehen unter
+
+## Urheberrecht
+Sämtlicher Inhalt dieses Werkes steht unter der [Creative Commons Namensnennung-ShareAlike Österreich](https://creativecommons.org/licenses/by-sa/3.0/at/) Lizenz, sofern nicht anders erwähnt.
+
+![Creative Commons by-sa AT](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/cc-by-sa.png)
+
 
 [1]: https://de.wikipedia.org/wiki/Html
 [2]: https://de.wikipedia.org/wiki/Javascript
@@ -542,3 +592,10 @@ Kartogramme sind thematische Karten, in denen quantitative Aussagen auf festgele
 [32]: https://de.wikipedia.org/wiki/GeoServer
 [33]: https://de.wikipedia.org/wiki/Web_Coverage_Service
 [34]: https://de.wikipedia.org/wiki/MapServer
+[35]: https://de.wikipedia.org/wiki/JSON
+[36]: https://de.wikipedia.org/wiki/Global_Positioning_System
+[37]: https://de.wikipedia.org/wiki/Open_Geospatial_Consortium
+[38]: https://de.wikipedia.org/wiki/Geography_Markup_Language
+[39]: https://de.wikipedia.org/wiki/Xml
+[40]: https://de.wikipedia.org/wiki/GeoRSS
+[41]: https://de.wikipedia.org/wiki/Internationale_Kartographische_Vereinigung

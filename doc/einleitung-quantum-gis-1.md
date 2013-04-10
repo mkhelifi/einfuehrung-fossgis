@@ -1,6 +1,7 @@
 TODO
 kontrollieren und erwähnen, welche plugins notwendig sind für die analysen
 
+# EINLEITUNG QUANTUM GIS
 Diese Einleitung soll AnfängerInnen die GIS-Software Quantums GIS und das Verwenden unterschiedlichster Datentypen und -quellen heran führen. Wer noch nie mit Quantum GIS gearbeitet hat kann entweder gleich mit den hier folgenden Schritten beginnen oder als Einführung den [Harvard Video Workshop](https://www.youtube.com/playlist?list=PL0AAB19E208B14E96) und [Jarrett Totton Quantum GIS Video Workshop](https://www.youtube.com/playlist?list=PLDEFCFD4D118823AA&feature=mh_lolz) ansehen.
 
 Die Ergebnisse sowie die Daten sind im [GitHub Repository](https://github.com/skasberger/einfuehrung-fossgis) zu sehen und werden darin kontinuirlich erweitert. Grundlegenes  Wissens rund um FOSSGIS ist in der [documentation.md](https://github.com/skasberger/einfuehrung-fossgis/blob/master/doc/documentation.md) Datei zu finden. 
@@ -101,4 +102,10 @@ punkt adden und danach speichern bestätigen
 was ist nochmal genau das problem laut michi?
 sehr kleinen ausschnitt wählen, da sonst download sehr lange dauert.
 stamen water color layer adden => dazu braucht es das openlayers plugin
+
+## Urheberrecht
+Sämtlicher Inhalt dieses Werkes steht unter der [Creative Commons Namensnennung-ShareAlike Österreich](https://creativecommons.org/licenses/by-sa/3.0/at/) Lizenz, sofern nicht anders erwähnt.
+
+![Creative Commons by-sa AT](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/cc-by-sa.png)
+
 
