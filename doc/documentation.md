@@ -1,5 +1,5 @@
- # DOKUMENTATION FOSSGIS
-Hier werden grundlegende Informationen rund um Freie Software, Freie Daten, Geoinforamtik und räumlich-statistische Analysen gesammelt. Dabei geht es nicht um konkrete Umsetzungen sondern um allgemeine Bereiche wie Theorien, Methoden oder Sammeln von Quellen.
+# DOKUMENTATION FOSSGIS
+Hier werden grundlegende Informationen rund um Freie Software, Freie Daten, Geoinformatik und räumlich-statistische Analysen gesammelt. Dabei geht es nicht um konkrete Umsetzungen sondern um allgemeine Bereiche wie Theorien, Methoden oder Sammeln von Quellen.
 
 ## GEOINFORMATIK
 
