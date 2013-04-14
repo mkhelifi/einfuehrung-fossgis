@@ -477,7 +477,7 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 
 
 ### Raster
-
+- [NASA Geländemodell(SRTM)](https://de.wikipedia.org/wiki/SRTM-Daten): Public Domain Rasterdaten
 	- [Alle](http://glcf.umd.edu/data/srtm/)
 	- [Westöstereich](ftp://srtm.csi.cgiar.org/SRTM_V41/SRTM_Data_GeoTiff/srtm_39_03.zip)
 	- [Ostösterreich](ftp://srtm.csi.cgiar.org/SRTM_V41/SRTM_Data_GeoTiff/srtm_40_03.zip)
@@ -549,6 +549,11 @@ Kartogramme sind thematische Karten, in denen quantitative Aussagen auf festgele
 
 - [Choroplethenkarte](https://de.wikipedia.org/wiki/Choroplethenkarte)
 
+#### Heatmap
+Eine Heatmap ist ein Diagramm zur Visualisierung von Daten, deren abhängige Werte einer zweidimensionalen Definitionsmenge als Farben repräsentiert werden. Sie dient dazu, in einer großen Datenmenge intuitiv und schnell besonders markante Werte zu erfassen. Der Begriff Heatmap ist unscharf. Er reicht in der engen Interpretation von (hohen) Temperaturen auf einer Landkarte bis hin zu Tree Maps mit unsystematischer Farbcodierung. Weite Verbreitung finden die Bestimmungen[42]
+
+![Heatmap Döner Verteilung Deutschland](https://upload.wikimedia.org/wikipedia/commons/d/d4/D%C3%B6ner_Kebab_Heatmap.png)
+
 ## Quellen
 Viele Texte hier stammen aus der deutschen Wikipedia und stehen unter
 
@@ -599,3 +604,4 @@ Sämtlicher Inhalt dieses Werkes steht unter der [Creative Commons Namensnennung
 [39]: https://de.wikipedia.org/wiki/Xml
 [40]: https://de.wikipedia.org/wiki/GeoRSS
 [41]: https://de.wikipedia.org/wiki/Internationale_Kartographische_Vereinigung
+[42]: https://de.wikipedia.org/wiki/Heatmap
