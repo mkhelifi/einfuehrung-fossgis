@@ -1,5 +1,5 @@
 # EINLEITUNG QUANTUM GIS - TEIL 1 (VEKTOR)
-Diese Einleitungs-Reihe soll AnfängerInnen an die GIS-Software Quantums GIS und das Verwenden unterschiedlichster Datentypen und -quellen heran führen. Wer noch nie mit Quantum GIS gearbeitet hat kann gleich mit den hier folgenden Schritten beginnen. HIlfreich ist dazu der [Harvard Video Workshop](https://www.youtube.com/playlist?list=PL0AAB19E208B14E96) und [Jarrett Totton Quantum GIS Video Workshop](https://www.youtube.com/playlist?list=PLDEFCFD4D118823AA&feature=mh_lolz) um das Programm besser zu verstehen.
+Diese Einleitungs-Reihe soll AnfängerInnen an die GIS-Software Quantums GIS und das Verwenden unterschiedlichster Datentypen und -quellen heran führen. Wer noch nie mit Quantum GIS gearbeitet hat kann gleich mit den hier folgenden Schritten beginnen. Hilfreiche Quellen für das Installieren und um Quantum GIS besser kennen zu lernen ist in [documentation.md unter Quantum GIS](https://github.com/skasberger/einfuehrung-fossgis/blob/master/doc/documentation.md#quantum-gis) zu finden.
 
 Die Ergebnisse sowie die Daten sind im [GitHub Repository](https://github.com/skasberger/einfuehrung-fossgis) zu sehen und werden darin kontinuierlich erweitert. Grundlegenes  Wissens rund um FOSSGIS ist in der [documentation.md](https://github.com/skasberger/einfuehrung-fossgis/blob/master/doc/documentation.md) Datei zu finden. 
 
@@ -51,26 +51,53 @@ Danach sollte das Bild so aussehen. Der erzeugte Raster Layer ist auch unter [da
 
 ![Apotheken Heatmap](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/heatmap-2.png)
 
-## Geometrische Aktionen
+## Geometrische Bearbeitungen
 
-### Schwerpunkt 
+### Schwerpunkt
+Folgendes ist zu tun um den Schwerpunkt eines Polygons zu finden und in einem eigenen Layer als Punkte zu speichern. Unter "Vektor" -> Geometrie Werkzeuge" "Polygonschwerpunkte" wählen, dann den Bezirksgrenzen Layer und Speicherort auswählen. 
 ![Bezirke Schwerpunkte](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/schwerpunkte.png)
 
+Der dadurch erzeugte Layer ist auch unter [data/shapefiles/qgis-example/bezirk-schwerpunkte](https://github.com/skasberger/einfuehrung-fossgis/tree/master/data/shapefiles/qgis-example/bezirk-schwerpunkte) zu finden.
+
 ### Voronoi Diagramm und Delaunay Triangulation
-Voronoi Diagramm zu den Apotheken erstellt
-schwerpunkte der bezirke
+''Voronoi Diagramm''
+Ein Voronoi Diagramm erzeugt zu jedem Punkt Flächen, in welchen alle Punkte innerhalb der Fläche dem Ausgangs-Punkt selber von der Distanz am nähesten sind ([Mehr zu Voronoi Diagramm?](https://github.com/skasberger/einfuehrung-fossgis/blob/master/doc/documentation.md#voronoi-diagramm)). 
+
+Um ein Voronoi Diagramm in Quantum GIS zu erstellen, unter "Vektor" -> "Geometrie-Werkzeuge" auf "Voronoi Diagramm" klicken. Im Menu dann den Apotheken POI Layer und den passende Speicherort auswählen.
+
 ![Voronoi Diagramm](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/voronoi.png)
-Delaunay Triangulation
+Der Voronoi Layer ist im Repository unter [data/shapefiles/qgis-example/apotheken-voronoi](https://github.com/skasberger/einfuehrung-fossgis/tree/master/data/shapefiles/qgis-example/apotheken-voronoi) zu finden.
+
+''Delaunay Triangulation''
+Bei der Delaunay Triangulation werden Punkte im R^2 so zu Dreiecken vernetzt, dass innerhalb des Kreises, auf dem die drei Dreieckspunkte liegen, keine anderen Punkte enthalten sind ([Was ist Delaunay Triangulation?](https://github.com/skasberger/einfuehrung-fossgis/blob/master/doc/documentation.md#delaunay-triangulation)).
+
+Um eine Delaunay Triangulation in Quantum GIS durchzuführen, unter "Vektor" -> "Geometrie-Werkzeuge" auf "Delaunay Triangulation" klicken. Im Menu dann den Apotheken POI Layer und den passende Speicherort auswählen.
+
 ![Delaunay Triangulation](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/delaunay.png)
-Delaunay Triangulation über Voronoi Diagramm
+
+Der Delaunay Layer ist im Repository unter [data/shapefiles/qgis-example/apotheken-delaunay](https://github.com/skasberger/einfuehrung-fossgis/tree/master/data/shapefiles/qgis-example/apotheken-delaunay) zu finden.
+
+''Delaunay Triangulation über Voronoi Diagramm''
+Wenn man die beiden Layer übereinander legt (mittels Transparenz) sieht man schön den Zusammenhang der beiden Methoden. Das Voronoi Diagramm erzeugt Flächen, wo die Punkte die Schwerpunkte der Flächen sind. Die Delaunay Triangulation verbindet diese Schwerpunkte von allen Flächen die sich berühren miteinander.
+
 ![Voronoi Diagramm und Delaunay Triangulation](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/voronoi-delaunay.png)
 
 ### Konvexe Huelle und Puffer
-Eine konvexe Hülle ist die kleinstmögliche Menge einer bestimmten Menge an Geometrien. In diesem Fall die kleinste Hülle zu den Apotheken in Graz.
+'' Konvexe Hülle''
+Eine konvexe Hülle beinhaltet die kleinstmögliche eingeschlossene Menge, in diesem Fall die kleinste Hülle rund um die Grazer Apotheken.
+
+Um eine Konvexe Hülle zu einem Vektorlayer zu erzeugen, unter "Vektor" -> "Geoverarbeitungswerkzeuge" auf "Konvexe Hülle" klicken. Im Menu dann den Apotheken POI Layer, den passende Speicherort und "Einzelne konvexe Minimalhülle erzeugen" auswählen.
+
 ![Konvexe Huelle](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/konvexe-huelle.png)
 
-Zur konvexen Hülle wird ein äusserer Puffer erzeugt. Als Größe für den Puffer wurde 200 Meter gewählt.
+Die Konvexe Hülle ist im Repository unter [data/shapefiles/qgis-example/apotheken-huelle](https://github.com/skasberger/einfuehrung-fossgis/tree/master/data/shapefiles/qgis-example/apotheken-huelle) zu finden.
+
+''Puffer''
+Zur konvexen Hülle wird ein äusserer Puffer erzeugt. Um einen Puffer zu einer Geometrie zu erzeugen, unter "Vektor" -> "Geoverarbeitungswerkzeuge" auf "Puffer" klicken. Im Menu dann den Apotheken POI Layer und den passende Speicherort auswählen, als Pufferabstand wird 200 gewählt (was in diesem Layer 200 Meter bedeutet).
+
 ![Puffer](http://openscience.alpine-geckos.at/project/einfuehrung-fossgis/images/qgis-examples/puffer.png)
+
+Der Puffer ist im Repository unter [data/shapefiles/qgis-example/apotheken-puffer](https://github.com/skasberger/einfuehrung-fossgis/tree/master/data/shapefiles/qgis-example/apotheken-puffer) zu finden.
 
 ### Distanzmatrix
 Vektor -> Analyse-Werkzeuge -> Distanzmatrix 

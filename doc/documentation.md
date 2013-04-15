@@ -514,6 +514,9 @@ GitHub ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. E
 
 ## Analyse & Präsentation
 
+### Konvexe Hülle
+Die konvexe Hülle einer Teilmenge ist die kleinste konvexe Menge, die die Ausgangsmenge enthält. Betrachtet wird dieses Objekt in unterschiedlichen mathematischen Disziplinen wie zum Beispiel in der konvexen Analysis. [43]
+
 ### Voronoi Diagramm
 Als Voronoi-Diagramm, auch Thiessen-Polygonen oder Dirichlet-Zerlegung, wird eine Zerlegung des Raumes in Regionen bezeichnet, die durch eine vorgegebene Menge an Punkten des Raumes, hier als Zentren bezeichnet, bestimmt werden. Jede Region wird durch genau ein Zentrum bestimmt und umfasst alle Punkte des Raumes, die in Bezug zur euklidischen Metrik näher an dem Zentrum der Region liegen, als an jedem anderen Zentrum. Derartige Regionen werden auch als Voronoi-Regionen bezeichnet. Aus allen Punkten, die mehr als ein nächstgelegenes Zentrum besitzen und somit die Grenzen der Regionen bilden, entsteht das Voronoi-Diagramm. [23]
 
@@ -605,3 +608,4 @@ Sämtlicher Inhalt dieses Werkes steht unter der [Creative Commons Namensnennung
 [40]: https://de.wikipedia.org/wiki/GeoRSS
 [41]: https://de.wikipedia.org/wiki/Internationale_Kartographische_Vereinigung
 [42]: https://de.wikipedia.org/wiki/Heatmap
+[43]: https://de.wikipedia.org/wiki/Konvexe_H%C3%BClle
